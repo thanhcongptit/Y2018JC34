@@ -5,4 +5,4 @@
  * @author Duy Diệu
  *
  */
-package com.imic.students.Pham_Duy_Dieu1;
+package com.imic.students.PhamDuyDieu;
