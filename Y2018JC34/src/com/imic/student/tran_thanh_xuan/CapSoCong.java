@@ -7,7 +7,8 @@ public class CapSoCong {
         int[] A;
         int count=0;
         A = new int[20];
-        Scanner sc = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for(int i = 0; i < n; i++){
             A[i] = sc.nextInt();
