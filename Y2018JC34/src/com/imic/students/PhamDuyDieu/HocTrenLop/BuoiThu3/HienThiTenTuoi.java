@@ -1,6 +1,6 @@
 package com.imic.students.PhamDuyDieu.HocTrenLop.BuoiThu3;
 
-public class BuoiThu3 {
+public class HienThiTenTuoi {
 /*
  * Viết chương trình hiển thị tên & tuổi ra màn hình.
  */
