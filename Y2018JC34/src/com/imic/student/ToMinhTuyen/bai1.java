@@ -17,8 +17,11 @@ public class bai1 {
 		String hoten = "tominhtuyen";
 		int tuoi = 29;
 		System.out.println("ho ten "+hoten+" nam nay "+tuoi+" tuoi" );
-	
 		System.out.printf("ho ten %s nam nay %d tuoi",hoten,tuoi);
+		
+		
+		
+		
 	}
 
 }
