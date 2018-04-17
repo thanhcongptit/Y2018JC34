@@ -6,15 +6,15 @@ public class NhapTuBanPhim {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("nhap ho ten : ");
-		String a = scanner.nextLine();
-		System.out.println("ho ten : "+a);
+		String name = scanner.nextLine();
+		System.out.println("ho ten : "+name);
 		System.out.println("nhap tuoi : ");
-		int b = scanner.nextInt();
+		int age = scanner.nextInt();
 		scanner.nextLine();
-		System.out.println("tuoi : "+b);
+		System.out.println("tuoi : "+age);
 		System.out.println("nhap dia chi");
-		String c = scanner.nextLine();
-		System.out.println("dia chi : "+c);
+		String add = scanner.nextLine();
+		System.out.println("dia chi : "+add);
 		
 		
 	}
