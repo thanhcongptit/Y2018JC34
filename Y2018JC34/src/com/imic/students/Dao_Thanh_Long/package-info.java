@@ -5,4 +5,4 @@
  * @author DaoThanhLong
  *
  */
-package com.imic.students.Dao_Thanh_Long;
+package com.imic.students.dao_thanh_long;
