@@ -16,9 +16,13 @@ public class bai1 {
 		//khai bao  ten + tuoi.
 		String hoten = "tominhtuyen";
 		int tuoi = 29;
+		System.out.print("ho ten: " + hoten);
+		System.out.print("nam nay: "+tuoi+" tuoi");
+		System.out.println();
 		System.out.println("ho ten "+hoten+" nam nay "+tuoi+" tuoi" );
 		System.out.printf("ho ten %s nam nay %d tuoi",hoten,tuoi);
-		
+		// Nhap vao tu ban phim
+		Scanner scanner = new Scanner(System.in);
 		
 		
 		
