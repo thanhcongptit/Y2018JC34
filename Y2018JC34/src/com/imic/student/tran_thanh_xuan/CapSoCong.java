@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CapSoCong {
 	public static void main(String arg[]){
-        int[] A;
+      /*  int[] A;
         int count=0;
         A = new int[20];
         @SuppressWarnings("resource")
@@ -19,7 +19,13 @@ public class CapSoCong {
         }
         if(count==n-1){
             System.out.println("Yes");
-        }else System.out.println("No");
+        }else System.out.println("No");*/
+      
+        int t1=3;
+        int t2=4;
+        String t = ""+t1+t2;
+        System.out.println(t);
+        
     }
 
 }
