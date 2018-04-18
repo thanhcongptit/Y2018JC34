@@ -5,5 +5,5 @@
  * @author PC
  *
  */
-package src.com.imic.students.minh;
+package com.imic.students.minh;
 //hhh
