@@ -1,5 +1,7 @@
 package com.imic.student.ToMinhTuyen;
 
+import java.util.Scanner;
+
 public class bai1 {
 		//Khai bao bien
 	public static void main(String[] args) {
