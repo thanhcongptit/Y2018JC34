@@ -1,5 +1,7 @@
 package com.imic.student.ToMinhTuyen;
 
+import java.util.Scanner;
+
 public class bai1 {
 		//Khai bao bien
 	public static void main(String[] args) {
@@ -22,6 +24,7 @@ public class bai1 {
 		System.out.println("ho ten "+hoten+" nam nay "+tuoi+" tuoi" );
 		System.out.printf("ho ten %s nam nay %d tuoi",hoten,tuoi);
 		// Nhap vao tu ban phim
+		
 		Scanner scanner = new Scanner(System.in);
 		
 		
