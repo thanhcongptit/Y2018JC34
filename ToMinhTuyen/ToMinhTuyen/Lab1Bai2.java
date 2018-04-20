@@ -1,4 +1,4 @@
-package com.imic.student.ToMinhTuyen;
+package ToMinhTuyen;
 
 import java.util.Scanner;
 
