@@ -74,7 +74,7 @@ public class _20180417_Lab1 {
 		System.out.println("/*======= Hoc sinh & diem TB =========*/");
 		System.out.println("/*====================================*/");
 		
-		System.out.println("Hay nhap ho và ten ");
+		System.out.println("Hay nhap ho vï¿½ ten ");
 		String hoTen = objScanner.nextLine();
 
 		System.out.println("Nhap diem TB");
@@ -113,7 +113,7 @@ public class _20180417_Lab1 {
 		
 		System.out.println("Nhap do dai canh");
 		double doDaiCanh = objScanner.nextDouble();
-		double theTich = Math.pow(doDaiCanh, (double)3);
+		double theTich = Math.pow(doDaiCanh, 3);
 		
 		System.out.printf("The tich hinh lap phuong = " + theTich);
 	}
