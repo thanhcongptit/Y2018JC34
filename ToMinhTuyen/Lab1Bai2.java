@@ -5,10 +5,6 @@ import java.util.Scanner;
 public class Lab1Bai2 {
 
 	public static void main(String[] args) {
-		/*
-		 * Bai Tap 2: Nhap chieu dai 2 canh cua hinh chu nhat va tinh chu vi voi dien
-		 * tich
-		 */
 		double canh1;
 		double canh2;
 		double dientich;

@@ -9,13 +9,13 @@ public class Lab1Bai1 {
 		//Bai tap 1: Nhap Ho Ten va diem Tb sau do in ra man hinh.
 		Scanner sc = new Scanner(System.in);
 		String hoten;
-		float diemtb;
+		double diemtb;
 		
 		System.out.println("Nhap ho ten");
 		hoten = sc.nextLine();
 		
 		System.out.println("Nhap diem TB");
-		diemtb = sc.nextFloat();
+		diemtb = sc.nextDouble();
 		sc.nextLine();
 		
 		System.out.printf("%s %f diem",hoten, diemtb);
