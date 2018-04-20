@@ -1,4 +1,4 @@
-package com.imic.student.ToMinhTuyen;
+package ToMinhTuyen;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Lab1Bai1 {
 		Scanner sc = new Scanner(System.in);
 		String hoten;
 		double diemtb;
-		
+	
 		System.out.println("Nhap ho ten");
 		hoten = sc.nextLine();
 		
