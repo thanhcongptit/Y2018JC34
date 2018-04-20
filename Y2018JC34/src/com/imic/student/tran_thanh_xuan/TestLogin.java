@@ -25,7 +25,7 @@ public class TestLogin {
 		if (userName.equals("") || passWord.equals("")) {
 			System.out.println("Ban chua nhap User name hoac Pass word!");
 		} else {
-			if (userName.equalsIgnoreCase("abc") && passWord.equalsIgnoreCase("123456")) {
+			if (userName.equals("abc") && passWord.equals("123456")) {
 				System.out.println("Ban da dang nhap thanh cong!");
 			} else {
 				System.out.println("Dang nhap khong thanh cong!");
