@@ -22,10 +22,12 @@ public class Lab1Bai2 {
 		dientich = canh1 * canh2;
 		chuvi = (canh1 + canh2) * 2;
 		double chieudai = Math.max(canh1, canh2);
+		double chieurong = Math.min(canh1, canh2);
 
 		System.out.println("Dien tich cua hinh chu nhat la: " + dientich);
 		System.out.println("chu vi cua hinh chu nhat la: " + chuvi);
 		System.out.println("chieu dai cua hinh chu nhat la: " + chieudai);
+		System.out.println("chieu rong cua hinh chu nhat la: " + chieurong);
 		/*
 		 * if (canh1 > canh2) { System.out.println("chieu dai cua hinh chu nhat la: " +
 		 * canh1); System.out.println("chieu rong cua hinh chu nhat la: " + canh2); }
