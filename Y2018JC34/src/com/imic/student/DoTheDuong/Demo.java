@@ -6,17 +6,27 @@ public class Demo {
 	public static void main(String args[]){
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Nhap ho ten:");
-		String hoTen = scanner.nextLine();
-		System.out.println("Ho va Ten: " + hoTen);
+		System.out.println("Nhap Username:");
+		String userName = scanner.nextLine();
 		
-		System.out.println("Nhap tuoi:");
-		int tuoi = scanner.nextInt();
-		System.out.println("Tuoi: " + tuoi);
-		scanner.nextLine();
+		System.out.println("Nhap Password:");
+		String passWord = scanner.nextLine();
 		
-		System.out.println("Nhap dia chi:");
-		String diaChi = scanner.nextLine();
-		System.out.println("Dia chi: " + diaChi);
+		if (userName.equals("")) {
+			System.out.println("Ban chua dang nhap Username");
+		} else if (passWord.equals("")) {
+			System.out.println("Ban chua dang nhap Password");
+		} else {
+			if (userName.equals("abc") && passWord.equals("123456")){
+				System.out.println("Ban da dang nhap thanh cong");
+			}
+			else {
+				System.out.println("Ban da dang nhap sai");
+			}
+		}
+			
+			
+		
+		
 	}
 }
