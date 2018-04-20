@@ -7,9 +7,9 @@ public class Bai2_ChuViDienTichHinhCn {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Cạnh 1 = ");
-		Double edge1 = scanner.nextDouble();
+		double edge1 = scanner.nextDouble();
 		System.out.print("Cạnh 2 = ");
-		Double edge2 = scanner.nextDouble();
+		double edge2 = scanner.nextDouble();
 		System.out.println("Chu vi = "+(edge1 + edge2)*2);
 		System.out.println("Diện tích = "+edge1*edge2);
 		System.out.println("Cạnh nhỏ = "+Math.min(edge1, edge2));

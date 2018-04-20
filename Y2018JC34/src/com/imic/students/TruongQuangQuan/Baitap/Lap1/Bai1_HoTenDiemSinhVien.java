@@ -8,7 +8,7 @@ public static void main(String[] args) {
 	System.out.print("Nhập Họ Tên : ");
 	String name = scanner.nextLine();
 	System.out.print("Nhập điểm : ");
-	Double point = scanner.nextDouble();
+	double point = scanner.nextDouble();
 	System.out.printf("Sinh viên %s : %.2f điểm", name, point);
 }
 }

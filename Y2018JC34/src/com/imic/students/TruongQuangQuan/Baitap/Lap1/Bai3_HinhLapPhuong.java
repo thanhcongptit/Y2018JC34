@@ -7,7 +7,7 @@ public class Bai3_HinhLapPhuong {
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Chiều dài cạnh = ");
-		Double edge = scanner.nextDouble();
+		double edge = scanner.nextDouble();
 		System.out.println("Thể tích khối lập phương = "+Math.pow(edge, 3));
 	}
 

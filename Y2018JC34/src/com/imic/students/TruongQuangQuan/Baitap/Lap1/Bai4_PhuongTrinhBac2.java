@@ -7,12 +7,12 @@ public class Bai4_PhuongTrinhBac2 {
 		Scanner scanner = new Scanner(System.in);
 //		Phương trình bậc 2 ax^2 + bx + c = 0
 		System.out.print("a = ");
-		Double a = scanner.nextDouble();
+		double a = scanner.nextDouble();
 		System.out.print("b = ");
-		Double b = scanner.nextDouble();
+		double b = scanner.nextDouble();
 		System.out.print("c = ");
-		Double c = scanner.nextDouble();
-		Double Delta = (Math.pow(b, 2)-4*a*c);
+		double c = scanner.nextDouble();
+		double Delta = (Math.pow(b, 2)-4*a*c);
 		System.out.println("Delta = "+Delta);
 		if (Delta >= 0) 
 		System.out.println("Căn Delta = "+Math.sqrt(Delta));					
