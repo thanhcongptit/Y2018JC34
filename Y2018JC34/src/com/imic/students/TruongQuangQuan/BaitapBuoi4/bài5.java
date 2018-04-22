@@ -11,8 +11,15 @@ public class bài5 {
 		System.out.println("Tên của bạn : ");
 		String name = scanner.nextLine();
 
+		while (name.equalsIgnoreCase("")) {
+			System.out.println("Bạn chưa nhập tên, hãy nhập lại ");
+			System.out.println("Tên của bạn : ");
+			name = scanner.nextLine();
+		}
+
 		boolean checkInput = true;
 		int i = 0;
+
 		do {
 			try {
 
@@ -34,20 +41,15 @@ public class bài5 {
 		System.out.println("Tình trạng hôn nhân : ");
 		String maritalStatus = scanner.nextLine();
 
-		System.out.println("Giới tính : ");
-		String sex = scanner.nextLine();
-
-		while (name.equalsIgnoreCase("")) {
-			System.out.println("Bạn chưa nhập tên, hãy nhập lại ");
-			System.out.println("Tên của bạn : ");
-			name = scanner.nextLine();
-		}
-
 		while (maritalStatus.equalsIgnoreCase("")) {
 			System.out.println("Bạn chưa nhập tình trạng hôn nhân, hãy nhập lại ");
 			System.out.println("Tình trạng hôn nhân : ");
 			maritalStatus = scanner.nextLine();
 		}
+
+		System.out.println("Giới tính : ");
+		String sex = scanner.nextLine();
+
 		while (sex.equalsIgnoreCase("")) {
 			System.out.println("Bạn chưa nhập giới tính, hãy nhập lại ");
 			System.out.println("Giới tính : ");
