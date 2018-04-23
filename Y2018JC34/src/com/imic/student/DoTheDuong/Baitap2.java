@@ -35,12 +35,9 @@ public class Baitap2 {
 			
 			if (Integer.parseInt(tuoi) >= 22 && gioiTinh.equals("Nam") && honNhan.equals("docthan")) {
 				System.out.println("Bạn được tham gia");
+			} else if (gioiTinh.equals("Nu") && Integer.parseInt(tuoi) >= 18 && honNhan.equals("Docthan")) {
+				System.out.println("Ban du dieu kien tham gia");
 			} else {
-				System.out.println("Ban ko du dieu kien tham gia");
-			}
-			if (gioiTinh.equals("Nu") && Integer.parseInt(tuoi) >= 18 && honNhan.equals("Docthan")) {
-				System.out.println("Bạn được tham gia");
-			}else {
 				System.out.println("Ban chua du dieu kien tham gia");
 			}
 		} 
