@@ -16,3 +16,5 @@ public class EpKieu {
 	}
 
 }
+System.out.println(\"Bạn đã đăng ký tham gia thành công..!\");\r\n" + 
+		"					System.out.println(\"Thông tin đăng ký:\\nHọ và tên: \"+ ten+\"\\nTuổi: \"+tuoi+\"\\nGiới tính: \"+gioiTinh+\"\\nTình trạng hôn nhân: \"+tinhTrangHonNhan+\"\\nXin Cảm Ơn..!\");\r\n" + 
