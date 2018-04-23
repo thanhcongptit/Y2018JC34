@@ -17,7 +17,18 @@ public class Bài234 {
 		do {
 			try {
 				numberExsercise = scanner.nextInt();
-				checkInput = true;
+				while (true) {
+					if (numberExsercise == 2 || numberExsercise == 3) {
+						break;
+					} else {
+						System.out.printf("Xin lỗi, không có bài %d , hãy nhập lại %n", numberExsercise);
+						System.out.println("2: Phương trình bậc 2");
+						System.out.println("3: Tính tiền điện");
+						numberExsercise = scanner.nextInt();
+					}
+					checkInput = true;
+				}
+
 			} catch (Exception e) {
 				System.out.println("Bạn nhập sai kiểu dữ liệu, hãy nhập lại");
 				scanner.nextLine();
@@ -25,9 +36,9 @@ public class Bài234 {
 			}
 		} while (!checkInput);
 
-		int a = 0, b = 0, c = 0;
 		switch (numberExsercise) {
 		case 2:
+			int a = 0, b = 0, c = 0;
 			do {
 				try {
 					double delta = 0;
