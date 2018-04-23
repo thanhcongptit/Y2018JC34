@@ -1,8 +1,8 @@
-package com.imic.students.PhamDuyDieu.HocTrenLop.BuoiThu4;
+package com.imic.students.PhamDuyDieu.BaiTapVeNha.BuoiThu4;
 
 import java.util.Scanner;
 
-public class DangNhapNhieuDieuKien {
+public class Bai5_DangNhapNhieuDieuKien {
 	/*
 	 * Yêu cầu người dùng nhập vào các thông tin liên quan cho việc xử
 	 * lý thông tin.  Phải kiểm tra tất cả những trường thông tin bắt
