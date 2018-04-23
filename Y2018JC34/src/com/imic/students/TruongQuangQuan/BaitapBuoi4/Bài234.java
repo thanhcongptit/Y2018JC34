@@ -17,19 +17,19 @@ public class Bài234 {
 		do {
 			try {
 				numberExsercise = scanner.nextInt();
-				checkInput= true;
+				checkInput = true;
 			} catch (Exception e) {
 				System.out.println("Bạn nhập sai kiểu dữ liệu, hãy nhập lại");
 				scanner.nextLine();
 				checkInput = false;
 			}
 		} while (!checkInput);
+
 		int a = 0, b = 0, c = 0;
 		switch (numberExsercise) {
 		case 2:
 			do {
 				try {
-
 					double delta = 0;
 					System.out.println("Bài 2 : Giải phương trình bậc 2");
 					System.out.println("Hãy nhập các giá trị a,b,c: ");
@@ -52,6 +52,7 @@ public class Bài234 {
 						} else
 							System.out.println("x= " + -b / a);
 					} else
+
 						delta = (Math.pow(b, 2) - 4 * a * c);
 					if (delta < 0) {
 						System.out.println("Phương trình vô nghiệm");
@@ -61,7 +62,7 @@ public class Bài234 {
 						System.out.println("Phương trình có 2 nghiệm");
 						System.out.println("x1= " + (-b + Math.sqrt(delta)) / (a * 2));
 						System.out.println("x2= " + (-b - Math.sqrt(delta)) / (a * 2));
-						checkInput=true;
+						checkInput = true;
 					}
 				} catch (Exception e) {
 					System.out.println("Bạn nhập sai kiểu dữ liệu, hãy nhập lại");
@@ -76,7 +77,7 @@ public class Bài234 {
 				try {
 
 					System.out.println("Bài 3: Tính tiền điện");
-					System.out.println("Hãy nhập vào tổng số điện dùng trong thang: ");
+					System.out.println("Hãy nhập vào tổng số điện dùng trong tháng: ");
 
 					double soDien = scanner.nextDouble();
 					double money = 0;
@@ -87,7 +88,7 @@ public class Bài234 {
 						money = 50 * 1000 + (soDien - 50) * 1200;
 					}
 					System.out.println("Tổng số tiền điện là: " + money);
-					checkInput=true;
+					checkInput = true;
 				} catch (Exception e) {
 					System.out.println("Bạn nhập sai kiểu dữ liệu, hãy nhập lại");
 					scanner.nextLine();
