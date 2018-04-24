@@ -21,7 +21,7 @@ public class TestMang {
 		int a[] = new int[b];
 		System.out.println("Bạn vừa khai báo mảng a["+b+"]\nMời bạn nhập vào giá trị các phần tử: ");
 		for(int i=0; i<b; i++) {
-			System.out.println("a["+i+"] = ");
+			System.out.print("a["+i+"] = ");
 			a[i]= sc.nextInt();
 			TBC +=a[i];
 			if(i==(b-1)) {
