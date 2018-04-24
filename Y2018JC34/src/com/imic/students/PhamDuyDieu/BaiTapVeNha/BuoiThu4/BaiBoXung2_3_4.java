@@ -32,7 +32,7 @@ public class BaiBoXung2_3_4 {
 				} else {
 					System.out.println("Phương trình có nghiệm: x = -b/a = " + (-b / a));
 				}
-				
+
 				break;
 			case 2:
 				System.out.println("Nhập hệ số a; b; c: ");

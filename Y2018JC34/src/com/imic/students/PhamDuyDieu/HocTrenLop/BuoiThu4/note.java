@@ -29,13 +29,13 @@ public class note {
 			tinhTrangHonNhan = sc.nextLine();
 			System.out.println("Gioi tinh: \n1: Nam\n2: Nu");
 			gioiTinh = sc.nextLine();
-			if(sosanh = Integer.parseUnsignedInt(tuoi)) {
+			/*if(sosanh = Integer.parseUnsignedInt(tuoi)) {
 				System.out.println("chưa nhập");
 			}
 			else {
 				System.out.println("Đã nhập");
 			}
-			
+*/			
 		}
 	}
 }
