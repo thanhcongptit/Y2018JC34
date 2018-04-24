@@ -14,7 +14,7 @@ public class TestMang {
  * BÀI TẬP: Nhập vào 1 mảng số nguyên. Tính và xuất trung bình cộng.
  */
 		int b=0;
-		int TBC=0;
+		double TBC=0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Mời bạn nhập vào số lượng phần tử của mảng: ");
 		b = sc.nextInt();
