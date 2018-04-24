@@ -21,7 +21,6 @@ public class _20180420_btvn {
 	public static void bai4(Scanner objSc) {
 		int thang = 0;
 		String nam = "";
-		
 		try {
 			System.out.println("Nhap vao thang can xem");
 			thang = objSc.nextInt();
@@ -90,20 +89,16 @@ public class _20180420_btvn {
 										.equals("LH"))) {
 						xuLyYeuCau(tuoi, gioiTinh, tinhTrangHonNhan);
 					} else {
-						System.out
-								.println("Thong tin ban nhap khong dung yeu cau.");
+						System.out.println("Thong tin ban nhap khong dung yeu cau.");
 					}
 				} else {
-					System.out
-							.println("Thong tin ban nhap khong dung yeu cau.");
+					System.out.println("Thong tin ban nhap khong dung yeu cau.");
 				}
 			} else {
-				System.out
-						.println("Thong tin ban nhap khong dung yeu cau.");
+				System.out.println("Thong tin ban nhap khong dung yeu cau.");
 			}
 		} else {
-			System.out
-					.println("Thong tin ban nhap khong dung yeu cau.");
+			System.out.println("Thong tin ban nhap khong dung yeu cau.");
 		}
 
 	}
@@ -174,7 +169,8 @@ public class _20180420_btvn {
 		}
 		System.out.printf("So luong so chan tu 0 den " + doubleGioiHan + " la "
 				+ soDem);
-		objSc.nextLine();
+		System.out.println();
+//		objSc.nextLine();
 	}
 
 	/*
@@ -204,7 +200,11 @@ public class _20180420_btvn {
 
 		if (a == 0f) {
 			if (b == 0f) {
-				System.out.println("Phuong trinh vo nghiem");
+				if(c == 0f){
+					System.out.println("Phuong trinh co vo so nghiem");
+				}else{
+					System.out.println("Phuong trinh vo nghiem");
+				}	
 			} else {
 				System.out.println("x = " + (-c / b));
 			}
@@ -223,7 +223,8 @@ public class _20180420_btvn {
 				System.out.printf("x2 = " + ((-b - sqrtDelta) / (2 * a)));
 			}
 		}
-		objSc.nextLine();
+		System.out.println();
+//		objSc.nextLine();
 	}
 
 	/*
@@ -250,8 +251,9 @@ public class _20180420_btvn {
 			tienDien = 50 * 1000 + (soDienSuDung - 50) * 1200;
 		}
 		System.out.println("So tien dien phai tra : " + tienDien);
-
-		objSc.nextLine();
+		System.out.println();
+		
+//		objSc.nextLine();
 	}
 
 	/*
