@@ -1,6 +1,6 @@
-package com.imic.students.nhatminh;
+package com.imic.students.PhamDuyDieu.HocTrenLop.BuoiThu4;
 
-public class java1 {
+public class VongLap {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
