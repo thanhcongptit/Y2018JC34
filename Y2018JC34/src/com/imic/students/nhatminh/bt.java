@@ -33,9 +33,15 @@ public class bt {
 		if(gioitinh.equalsIgnoreCase("Nam") && Integer.parseInt(tuoi) >=22) { 
 			System.out.println("Tham gia thanh cong");
 		}
+		else if(gioitinh.equalsIgnoreCase("Nu") && Integer.parseInt(tuoi) >=19){
+			System.out.println("Tham gia thanh cong");
+		}	
+		else if(Integer.parseInt(tuoi) <19) {
+			System.out.println("Tham gia that bai");
 		}
-		
 	}
+}	
+	
 
 
 

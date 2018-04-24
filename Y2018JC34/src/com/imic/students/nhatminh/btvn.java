@@ -6,6 +6,7 @@ public class btvn {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Nhap username");
 		String username = sc.nextLine();
@@ -18,7 +19,7 @@ public class btvn {
 		if(password.equalsIgnoreCase(i)){
 			System.out.println("Ban chua nhap password");
 		}
-    	String trueusername ="chaudien";
+    	String trueusername ="abc";
     	String truepass = "123456";
     	if(username.equalsIgnoreCase(trueusername)){
     		System.out.println("username dung");
@@ -28,8 +29,9 @@ public class btvn {
     	if(password.equalsIgnoreCase(truepass)){
     		System.out.println("password dung");
     	}
-    	else
+    	else 
     		System.out.println("password sai");
+    		
 	}
 }
     		
