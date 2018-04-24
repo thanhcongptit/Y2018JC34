@@ -119,12 +119,10 @@ public class Bài234 {
 						scanner.nextLine();
 						checkInput = false;
 					}
-
 				} while (!checkInput);
 				break;
 			default:
 				break;
-
 			}
 		}
 	}

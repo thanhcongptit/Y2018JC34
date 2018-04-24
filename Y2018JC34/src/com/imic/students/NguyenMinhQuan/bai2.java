@@ -2,7 +2,6 @@ package com.imic.students.NguyenMinhQuan;
 
 import java.util.Scanner;
 
-import com.sun.xml.internal.ws.api.pipe.NextAction;
 
 public class bai2 {
 

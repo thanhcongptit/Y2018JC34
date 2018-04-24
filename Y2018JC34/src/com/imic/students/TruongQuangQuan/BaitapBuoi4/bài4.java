@@ -41,7 +41,7 @@ public class bài4 {
 					result = "31";
 					break;
 				case "2":
-					if (((i % 4 == 0 && i % 100 != 0) || i % 400 == 0) && month.equalsIgnoreCase("2")) {
+					if (((i % 4 == 0 && i % 100 != 0) || i % 400 == 0)) {
 						result = "29";
 					} else {
 						result = "28";
