@@ -25,6 +25,7 @@ public class _20180420_btvn {
 		try {
 			System.out.println("Nhap vao thang can xem");
 			thang = objSc.nextInt();
+			objSc.nextLine();
 			
 			System.out.println("Nhap vao nam can xem");
 			nam = objSc.nextLine();
