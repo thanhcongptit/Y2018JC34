@@ -19,20 +19,28 @@ public class _20180420_btvn {
 	 * BAI TAP 4
 	 */
 	public static void bai4(Scanner objSc) {
-		String thang, nam;
-		System.out.println("Nhap vao thang can xem");
-		thang = objSc.nextLine();
-
-		System.out.println("Nhap vao nam can xem");
-		nam = objSc.nextLine();
+		int thang = 0;
+		String nam = "";
+		
+		try {
+			System.out.println("Nhap vao thang can xem");
+			thang = objSc.nextInt();
+			
+			System.out.println("Nhap vao nam can xem");
+			nam = objSc.nextLine();
+			
+		} catch (Exception e) {
+			System.out.println("Gia tri ban nhap khong dung");
+			objSc.nextLine();
+			return;
+		}
 		int intNam = Integer.parseInt(nam);
 
 		int nhom = 0;
-		if (0 < Integer.parseInt(thang) && Integer.parseInt(thang) <= 12) {
-			if (thang.equals("4") || thang.equals("6") || thang.equals("9")
-					|| thang.equals("11")) {
+		if ((0 < thang) && (thang <= 12)) {
+			if ((thang == 4) || (thang == 6) || (thang==9) || (thang == 11)) {
 				nhom = 1;
-			} else if (thang.equals("2")) {
+			} else if (thang == 2) {
 				nhom = 2;
 			} else {
 				nhom = 3;
