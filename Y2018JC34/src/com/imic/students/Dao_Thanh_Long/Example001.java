@@ -1,5 +1,6 @@
 package com.imic.students.Dao_Thanh_Long;
 
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class Example001 {
@@ -29,9 +30,11 @@ public class Example001 {
 			arr[i] = objSc.nextDouble();
 			tong += arr[i];
 		}	
+		
 		System.out.printf("Trung binh cong = %.2f" , (tong/soPhanTu));
 			
 		objSc.close();
 	}
+	
 
 }
