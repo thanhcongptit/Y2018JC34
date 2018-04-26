@@ -1,4 +1,4 @@
-package com.imic.students.TruongQuangQuan.Baitapbuoi5;
+package com.imic.students.PhamDuyDieu.BaiTapVeNha.BuoiThu5;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -17,7 +17,7 @@ import java.util.Scanner;
 //o Giỏi: 7.5<= điểm < 9
 //o Xuất sắc: điểm >= 9
 // Sắp xếp danh sách sinh viên đã nhập tăng dần theo điểm
-public class Bai4 {
+public class Bai5 {
 	public static void main(String[] args) {
 
 		int n = 0;
@@ -36,19 +36,19 @@ public class Bai4 {
 				checkInput = false;
 			}
 		} while (!checkInput);
-
+// KHAI BÁO 2 MẢNG TÊN SINH VIÊN VÀ ĐIỂM ĐỀU CÓ SỐ PHẦN TỬ n
 		String name[] = new String[n];
 		double point[] = new double[n];
 
 		int i = 0;
-
+// KHAI BÁO TÊN SINH VIÊN
 		while (i < name.length) {
-			System.out.printf("Sinh viên thứ %x3d : ", i+1);
+			System.out.printf("Sinh viên thứ %d : ", i+1);
 			name[i] = sc.nextLine();
 			i++;
 		}
 		System.out.println("---------------------------");
-
+// KHAI BÁO VÀ KIỂM TRA DỮ LIỆU ĐIỂM
 		i = 0;
 		int j = 0;
 		checkInput = true;
@@ -67,7 +67,7 @@ public class Bai4 {
 			}
 		} while (!checkInput);
 		System.out.println("-----------------------------");
-
+// KHAI BÁO 1 MẢNG TRẢ VỀ XẾP LOẠI HỌC LỰC CÓ N PHẦN TỬ
 		String result[] = new String[n];
 
 		for (int k = 0; k < point.length; k++) {
