@@ -7,11 +7,12 @@ public class ExerciseDay5Lad02 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		
-		System.out.println("Nhap Vap 10 Phan tu : ");
+		int n = 0;
+		System.out.println("Nhap Vao So Phan Tu Cua Mang : ");
+		n = input.nextInt();
 		System.out.println("-----------------");
-		int[] a = new int[5];
- 		for( int i = 0; i < 5; i++) {
+		int[] a = new int[n];
+ 		for( int i = 0; i < n; i++) {
  			System.out.println("Nhap Phan Tu Thu " + i + " : ");
 			a[i] = input.nextInt();
 			System.out.println("-----------------");
