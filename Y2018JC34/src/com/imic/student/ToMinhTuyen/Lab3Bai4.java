@@ -12,6 +12,15 @@ public class Lab3Bai4 {
 	// Gioi: 7.5 <= diem < 9
 	// Xuat Sac: Diem >=9
 	// Sap xep sinh vien da nhap tang dan theo diem
+	
+	
+	
+	//Comment tu Le Thanh Cong
+	/*
+	Do bạn cần để nextLine() tại sau lúc nhập số chứ không phải lúc nhập String xong
+	Nếu để như bạn làm lúc đầu: thì nó sẽ bỏ qua việc gán này : name[i] = scanner.nextLine();
+	và lúc bạn nhập thực chất là bạn đang nhập và không gán cho biên name[i] mà chỉ là chạy lệnh scanner.nextLine();
+	*/
 
 	public static void main(String[] args) {
 
@@ -24,6 +33,7 @@ public class Lab3Bai4 {
 			try {
 				System.out.println("Nhap So luong sinh vien");
 				soluong = scanner.nextInt();
+				scanner.nextLine();
 				check1 = false;
 
 			} catch (Exception e) {
@@ -43,9 +53,10 @@ public class Lab3Bai4 {
 					System.out.println("Sinh vien thu " + (i + 1));
 					System.out.println("Ho Ten:");
 					name[i] = scanner.nextLine();
-					scanner.nextLine();
+					
 					System.out.println("Diem:");
 					diem[i] = scanner.nextDouble();
+					scanner.nextLine();
 					check2 = false;
 
 					if (diem[i] < 0 || diem[i] > 10) {
