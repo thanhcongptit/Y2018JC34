@@ -18,7 +18,7 @@ public class Bai5_VietChuongTrinhNhapSoNguyenDuong {
 		int demUoc = 0;
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Nhập một số nguyên dương: ");
-		a = sc.nextInt();
+		a = sc.nextDouble();
 		System.out.println(
 				"Vui lòng chọn: \n1) Tính tổng các chữ số của n \n2) Liệt kê các ước số của n \n3) Liệt kê các ước số là nguyên tố của n");
 		chon = sc.nextInt();
@@ -38,7 +38,7 @@ public class Bai5_VietChuongTrinhNhapSoNguyenDuong {
 		}
 		switch (chon) {
 		case 1: // TÍNH TỔNG CÁC CHỮ SỐ CỦA A
-			for (int i = 20; i >= 0; i--) {
+			for (int i = 100; i >= 0; i--) {
 				int phannguyen = (int) (a / (Math.pow(10, i)));
 				if (phannguyen > 0) {
 					a = (int) (a - (Math.pow(10, i)) * phannguyen);
