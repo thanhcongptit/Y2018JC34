@@ -22,7 +22,7 @@ public class Bai5_VietChuongTrinhNhapSoNguyenDuong {
 		System.out.println(
 				"Vui lòng chọn: \n1) Tính tổng các chữ số của n \n2) Liệt kê các ước số của n \n3) Liệt kê các ước số là nguyên tố của n");
 		chon = sc.nextInt();
-		for (int j = 1; j < 1000000; j++) {
+		for (int j = 1; j <= a; j++) {
 			if (a % j == 0) {
 				uocso += j + "  ";
 				demUoc = 0;

@@ -22,7 +22,7 @@ public class Bai6_NhapMangSoNguyenCoNPhanTu {
 		nhapMang(a);
 		while(vonglap) {
 		System.out.println(
-				"Nhập lựa chọn: \n 1) Xuất giá trị các phần tử của mảng. \n 2) Tìm phần tử có giá trị lớn nhất, nhỏ nhất. \n 3) Đếm số phần tử là số chắn. \n 4) Tìm các phần tử là số nguyên tố. \n 5) Sắp xếp mảng tăng dần. \n 6) Tìm phần tử có giá trị x. \n 7) Tiếp tục. \n 8) Thoát. \n============================");
+				"Nhập lựa chọn: \n 1) Xuất giá trị các phần tử của mảng. \n 2) Tìm phần tử có giá trị lớn nhất, nhỏ nhất. \n 3) Đếm số phần tử là số chắn. \n 4) Tìm các phần tử là số nguyên tố. \n 5) Sắp xếp mảng tăng dần. \n 6) Tìm phần tử có giá trị x. \n 7) Thoát. \n============================");
 		luachon = sc.nextInt();
 		
 		switch (luachon) {
@@ -46,14 +46,11 @@ public class Bai6_NhapMangSoNguyenCoNPhanTu {
 			timPhanTu(a);
 			break;
 		case 7:
-			vonglap = true;
-			break;
-		case 8:
-			vonglap = false;
+			System.err.println("Tạm Biệt..!");
+			System.exit(0);
 			break;
 		}
-	}
-		System.out.println("Tạm Biệt..!");
+	}	
 	}
 	public static void timPhanTu(int a[]) {
 		int x = 0;
