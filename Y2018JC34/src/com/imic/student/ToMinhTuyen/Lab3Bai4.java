@@ -1,17 +1,26 @@
 package com.imic.student.ToMinhTuyen;
 
-
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Lab3Bai4 {
 	// Viet chuong trinh nhap 2 mang ho ten va diem cua sinh vien
-	// Xuat 2 mang da nhap, moi sinh vien co them hoc luc
+	// Xuat 2mang da nhap, moi sinh vien co them hoc luc
 	// yeu: diem < 5
 	// Trung binh: 5 < diem < 6.5
 	// Kha: 6.5 <= diem < 7.5
 	// Gioi: 7.5 <= diem < 9
 	// Xuat Sac: Diem >=9
 	// Sap xep sinh vien da nhap tang dan theo diem
+	
+	
+	
+	//Comment tu Le Thanh Cong
+	/*
+	Do bạn cần để nextLine() tại sau lúc nhập số chứ không phải lúc nhập String xong
+	Nếu để như bạn làm lúc đầu: thì nó sẽ b�? qua việc gán này : name[i] = scanner.nextLine();
+	và lúc bạn nhập thực chất là bạn đang nhập và không gán cho biên name[i] mà chỉ là chạy lệnh scanner.nextLine();
+	*/
 
 	public static void main(String[] args) {
 
@@ -20,19 +29,18 @@ public class Lab3Bai4 {
 		boolean check2 = true;
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Nhap So luong sinh vien");
-		while (check1) {
+		do {
 			try {
+				System.out.println("Nhap So luong sinh vien");
 				soluong = scanner.nextInt();
+				scanner.nextLine();
 				check1 = false;
 
 			} catch (Exception e) {
 				System.out.println("Ban da nhap sai moi ban nhap lai");
-				scanner.nextLine();
-				check1 = true;
 			}
 
-		}
+		} while (check1);
 
 		String name[] = new String[soluong];
 		double diem[] = new double[soluong];
@@ -40,14 +48,15 @@ public class Lab3Bai4 {
 		System.out.println("Moi ban nhap ho ten sinh vien va diem");
 
 		for (int i = 0; i < name.length; i++) {
-			while (check2){
+			do {
 				try {
 					System.out.println("Sinh vien thu " + (i + 1));
 					System.out.println("Ho Ten:");
-					scanner.nextLine();
 					name[i] = scanner.nextLine();
+					
 					System.out.println("Diem:");
 					diem[i] = scanner.nextDouble();
+					scanner.nextLine();
 					check2 = false;
 
 					if (diem[i] < 0 || diem[i] > 10) {
@@ -58,7 +67,7 @@ public class Lab3Bai4 {
 					System.out.println("Ban nhap khong dung moi ban nhap lai");
 					check2 = true;
 				}
-			} 
+			} while (check2);
 		}
 		String hocluc[] = new String[soluong];
 		for (int i = 0; i < soluong; i++) {
