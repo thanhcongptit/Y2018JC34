@@ -83,7 +83,7 @@ public class BTVN_6_040518 {
 	// hàm kiểm tra số thuận nghịch
 	public static boolean ReversibleNumber(int n) {
 		String temp = n + "";
-		String reversibleString = new StringBuffer(temp).reverse().toString();
+		String reversibleString = new StringBuffer(temp).reverse().toString(); // StringBuffer(temp).reverse().toString(); đảo xâu
 		if (temp.equals(reversibleString)) {
 			return true;
 		}
