@@ -8,12 +8,12 @@ public class bài5 {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Tên của bạn : ");
+		System.out.println("TÃªn cá»§a báº¡n : ");
 		String name = scanner.nextLine();
 
 		while (name.equalsIgnoreCase("")) {
-			System.out.println("Bạn chưa nhập tên, hãy nhập lại ");
-			System.out.println("Tên của bạn : ");
+			System.out.println("Báº¡n chÆ°a nháº­p tÃªn, hÃ£y nháº­p láº¡i ");
+			System.out.println("TÃªn cá»§a báº¡n : ");
 			name = scanner.nextLine();
 		}
 
@@ -23,48 +23,49 @@ public class bài5 {
 		do {
 			try {
 
-				System.out.println("Tuổi : ");
+				System.out.println("Tuá»•i : ");
 				String age = scanner.nextLine();
 				while (age.equalsIgnoreCase("")) {
-					System.out.println("Bạn chưa nhập tuổi, hãy nhập lại ");
-					System.out.println("Tuổi : ");
+					System.out.println("Báº¡n chÆ°a nháº­p tuá»•i, hÃ£y nháº­p láº¡i ");
+					System.out.println("Tuá»•i : ");
 					age = scanner.nextLine();
 				}
 				i = Integer.parseInt(age);
 				checkInput = true;
 			} catch (Exception e) {
-				System.out.println("Bạn đã nhập sai kiểu dữ liệu tuổi,hãy nhập lại");
+				System.out.println("Báº¡n Ä‘Ã£ nháº­p sai kiá»ƒu dá»¯ liá»‡u tuá»•i,hÃ£y nháº­p láº¡i");
 				checkInput = false;
 			}
 		} while (!checkInput);
 
-		System.out.println("Tình trạng hôn nhân : ");
+		System.out.println("TÃ¬nh tráº¡ng hÃ´n nhÃ¢n : ");
 		String maritalStatus = scanner.nextLine();
 
 		while (maritalStatus.equalsIgnoreCase("")) {
-			System.out.println("Bạn chưa nhập tình trạng hôn nhân, hãy nhập lại ");
-			System.out.println("Tình trạng hôn nhân : ");
+			System.out.println("Báº¡n chÆ°a nháº­p tÃ¬nh tráº¡ng hÃ´n nhÃ¢n, hÃ£y nháº­p láº¡i ");
+			System.out.println("TÃ¬nh tráº¡ng hÃ´n nhÃ¢n : ");
 			maritalStatus = scanner.nextLine();
 		}
 
-		System.out.println("Giới tính : ");
+		System.out.println("Giá»›i tÃ­nh : ");
 		String sex = scanner.nextLine();
 
 		while (sex.equalsIgnoreCase("")) {
-			System.out.println("Bạn chưa nhập giới tính, hãy nhập lại ");
-			System.out.println("Giới tính : ");
+			System.out.println("Báº¡n chÆ°a nháº­p giá»›i tÃ­nh, hÃ£y nháº­p láº¡i ");
+			System.out.println("Giá»›i tÃ­nh : ");
 			sex = scanner.nextLine();
 		}
 
-		if (i >= 22 && (maritalStatus.equalsIgnoreCase("Chưa có gia đình") || maritalStatus.equalsIgnoreCase("Ly hôn"))
+		if (i >= 22
+				&& (maritalStatus.equalsIgnoreCase("ChÆ°a cÃ³ gia Ä‘Ã¬nh") || maritalStatus.equalsIgnoreCase("Ly hÃ´n"))
 				&& sex.equalsIgnoreCase("Nam")) {
-			System.out.printf("Chào mừng %s tham gia kết bạn", name);
+			System.out.printf("ChÃ o má»«ng %s tham gia káº¿t báº¡n", name);
 		} else if (i >= 19
-				&& (maritalStatus.equalsIgnoreCase("Chưa có gia đình") || maritalStatus.equalsIgnoreCase("Ly hôn"))
-				&& sex.equalsIgnoreCase("Nữ")) {
-			System.out.printf("Chào mừng %s tham gia kết bạn", name);
+				&& (maritalStatus.equalsIgnoreCase("ChÆ°a cÃ³ gia Ä‘Ã¬nh") || maritalStatus.equalsIgnoreCase("Ly hÃ´n"))
+				&& sex.equalsIgnoreCase("Ná»¯")) {
+			System.out.printf("ChÃ o má»«ng %s tham gia káº¿t báº¡n", name);
 		} else {
-			System.out.println("Xin lỗi, bạn chưa đủ điều kiện tham gia");
+			System.out.println("Xin lá»—i, báº¡n chÆ°a Ä‘á»§ Ä‘iá»�u kiá»‡n tham gia");
 		}
 
 	}
