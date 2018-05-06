@@ -15,7 +15,7 @@ d) Tổng các chữ số là số thuận nghịch.
 	public static void phanA() {
 		int dem=0;
 		String ketqua = "";
-		for(int i = 1000000;i<1111111;i++) {
+		for(int i = 1000000;i<10000000;i++) {
 			dem=0;
 			for(int j = 1;j<=i;j++) {
 				if(i%j==0) {
