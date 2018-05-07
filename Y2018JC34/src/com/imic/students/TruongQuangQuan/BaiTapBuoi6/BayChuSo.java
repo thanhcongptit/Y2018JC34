@@ -11,7 +11,7 @@ public class BayChuSo {
 
 		// a) Là số nguyên tố.
 		System.out.print("Các số có 7 chữ số là số nguyên tố: ");
-		for (int i = 1000000; i < 10000000; i++) {
+		for (int i = 1000001; i < 10000000; i+=2) {
 			if (soNguyenTo(i)) {
 				System.out.print(i + ",");
 			}
@@ -83,14 +83,13 @@ public class BayChuSo {
 	}
 
 	public static boolean soNguyenTo(int i) {
-		int count = 0;
-		for (int j = 1; j < i; j++) {
-			if (i % j == 0) {
-				count++;
-			}
-		}
-		if (count != 1) {
+		if (i<2) {
 			return false;
+		}
+		for (int j = 2; j <= Math.sqrt(i); j++) {
+			if (i % j == 0) {
+				return false;
+			}
 		}
 		return true;
 	}
