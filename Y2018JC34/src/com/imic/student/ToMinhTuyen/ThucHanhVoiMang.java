@@ -24,6 +24,9 @@ public class ThucHanhVoiMang {
 		}
 		double tb = tong / soluong;
 		System.out.println("Trung binh cong cac phan tu cua mang :" + tb);
+		
+		
+		
 
 	}
 

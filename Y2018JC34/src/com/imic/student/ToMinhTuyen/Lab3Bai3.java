@@ -14,29 +14,40 @@ public class Lab3Bai3 {
 		int min = 0;
 		int dem = 0;
 		int tong = 0;
+		boolean check = true;
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Nhap so luong phan tu cua mang");
-		try {
-			soluong = scanner.nextInt();
-		} catch (Exception e) {
-			System.out.println("Ban da nhap sai moi ban nhap lai");
-			soluong = scanner.nextInt();
+		while (check) {
+			try {
+				soluong = scanner.nextInt();
+				check = false;
+			} catch (Exception e) {
+				System.out.println("Ban da nhap sai moi ban nhap lai");
+				scanner.nextLine();
+				check = true;
+			}
+
 		}
 
 		int a[] = new int[soluong];
 		System.out.println("Nhap Cac phan tu cua Mang");
+		for (int i = 0; i < a.length; i++) {
+			while (!check) {
 
-		try {
+				try {
 
-			for (int i = 0; i < a.length; i++) {
-				System.out.println("Phan tu " + i);
-				a[i] = scanner.nextInt();
+					System.out.println("a[" + i + "]");
+					scanner.nextLine();
+					a[i] = scanner.nextInt();
+					check = false;
+					break;
+				} catch (Exception e) {
+					System.out.println("Ban nhap sai Moi ban nhap lai");
 
+					check = false;
+				}
 			}
-		} catch (Exception e) {
-			System.out.println("Ban nhap sai");
-
 		}
 		System.out.println("Mang goc : " + Arrays.toString(a));
 		Arrays.sort(a);
@@ -56,7 +67,11 @@ public class Lab3Bai3 {
 
 			}
 		}
-		System.out.println("Trung Binh cong cua can phan tu chia het cho 3 la: " + (tong / dem));
+		if (dem == 0) {
+			System.out.println("khong co phan tu nao cua mang chia het cho 3");
+		} else {
+			System.out.println("Trung Binh cong cua can phan tu chia het cho 3 la: " + (tong / dem));
+		}
 	}
 
 }

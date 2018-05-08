@@ -56,8 +56,12 @@ public class bài5 {
 			sex = scanner.nextLine();
 		}
 
+<<<<<<< HEAD
+		if (i >= 22 && (maritalStatus.equalsIgnoreCase("ChÆ°a cÃ³ gia Ä‘Ã¬nh") || maritalStatus.equalsIgnoreCase("Ly hÃ´n"))
+=======
 		if (i >= 22
 				&& (maritalStatus.equalsIgnoreCase("ChÆ°a cÃ³ gia Ä‘Ã¬nh") || maritalStatus.equalsIgnoreCase("Ly hÃ´n"))
+>>>>>>> branch 'master' of https://github.com/thanhcongptit/Y2018JC34
 				&& sex.equalsIgnoreCase("Nam")) {
 			System.out.printf("ChÃ o má»«ng %s tham gia káº¿t báº¡n", name);
 		} else if (i >= 19

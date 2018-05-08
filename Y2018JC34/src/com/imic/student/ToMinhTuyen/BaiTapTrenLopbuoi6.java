@@ -27,6 +27,7 @@ public class BaiTapTrenLopbuoi6 {
 				if (mangchuoi[i].equalsIgnoreCase(mangchuoi[j])) {
 					dem1++;
 					
+					
 				}
 			}
 			dem[i] = dem1;

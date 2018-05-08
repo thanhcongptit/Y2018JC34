@@ -23,6 +23,7 @@ public class BaiTap6 {
 			System.out.printf(" So %d la so Le", number);
 		}
 		System.out.println();
+		
 		int a = 0;
 		int sochan = 0;
 		int b = 1;

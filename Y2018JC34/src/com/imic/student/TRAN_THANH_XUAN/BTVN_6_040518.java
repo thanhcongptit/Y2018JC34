@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BTVN_6_040518 {
 	/*
 	 * Viết chương trình liệt kệ các số nguyên có 7 chữ số thảo mãn: a) Là số nguyên
-	 * tố. b) Là số thuận nghịch. c) Mỗi chữ số đều là số nguyên tố. d) Tổng các chữ
+	 * tố. b) Là số thuận nghịch. c) Mỗi chữ số đ�?u là số nguyên tố. d) Tổng các chữ
 	 * số là số thuận nghịch.
 	 */
 	public static void main(String[] args) {
@@ -14,9 +14,9 @@ public class BTVN_6_040518 {
 		System.out.println("Chương trình liệt kệ các số nguyên có 7 chữ số thảo mãn:");
 		System.out.println("a. SNT có 7 chữ số");
 		System.out.println("b. Số thuận nghịch có 7 chữ số");
-		System.out.println("c. Số 7 chữ số có các số đều là SNT");
+		System.out.println("c. Số 7 chữ số có các số đ�?u là SNT");
 		System.out.println("d. Tổng các chữ số là số thuận nghịch");
-		System.out.println("Mời bạn chọn: ");
+		System.out.println("M�?i bạn ch�?n: ");
 		String choice = sc.nextLine();
 		switch (choice) {
 
@@ -42,7 +42,7 @@ public class BTVN_6_040518 {
 
 		// -------------------phần c-----------------------//
 		case "c":
-			// System.out.println("C.Số 7 chữ số có các số đều là SNT ");
+			// System.out.println("C.Số 7 chữ số có các số đ�?u là SNT ");
 			for (int i = 1000000; i <= 9999999; i++) {
 				if (SeparatorNumber(i)) {
 					System.out.println(i);
@@ -60,7 +60,7 @@ public class BTVN_6_040518 {
 			}
 			break;
 		default:
-			System.out.println("Bạn chọn sai rồi ^_^");
+			System.out.println("Bạn ch�?n sai rồi ^_^");
 			break;
 		}
 

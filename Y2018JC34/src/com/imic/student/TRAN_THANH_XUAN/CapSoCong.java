@@ -1,4 +1,4 @@
-package com.imic.student.tran_thanh_xuan;
+package com.imic.student.TRAN_THANH_XUAN;
 
 import java.util.Scanner;
 

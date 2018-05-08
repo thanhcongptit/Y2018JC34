@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Lab3Bai4 {
+	//hhhh
 	// Viet chuong trinh nhap 2 mang ho ten va diem cua sinh vien
 	// Xuat 2mang da nhap, moi sinh vien co them hoc luc
 	// yeu: diem < 5
@@ -17,9 +18,9 @@ public class Lab3Bai4 {
 	
 	//Comment tu Le Thanh Cong
 	/*
-	Do bạn cần để nextLine() tại sau lúc nhập số chứ không phải lúc nhập String xong
-	Nếu để như bạn làm lúc đầu: thì nó sẽ b�? qua việc gán này : name[i] = scanner.nextLine();
-	và lúc bạn nhập thực chất là bạn đang nhập và không gán cho biên name[i] mà chỉ là chạy lệnh scanner.nextLine();
+	Do báº¡n cáº§n Ä‘á»ƒ nextLine() táº¡i sau lÃºc nháº­p sá»‘ chá»© khÃ´ng pháº£i lÃºc nháº­p String xong
+	Náº¿u Ä‘á»ƒ nhÆ° báº¡n lÃ m lÃºc Ä‘áº§u: thÃ¬ nÃ³ sáº½ bá»� qua viá»‡c gÃ¡n nÃ y : name[i] = scanner.nextLine();
+	vÃ  lÃºc báº¡n nháº­p thá»±c cháº¥t lÃ  báº¡n Ä‘ang nháº­p vÃ  khÃ´ng gÃ¡n cho biÃªn name[i] mÃ  chá»‰ lÃ  cháº¡y lá»‡nh scanner.nextLine();
 	*/
 
 	public static void main(String[] args) {
@@ -109,7 +110,7 @@ public class Lab3Bai4 {
 			}
 		}
 		for (int i = 0; i < soluong; i++) {
-			System.out.println("Sinh Vien:" + name[i]);
+			System.out.println("Sinh Vien: " + name[i]);
 			System.out.println("Diem: " + diem[i]);
 			System.out.println("Hoc Luc: " + hocluc[i]);
 			System.out.println();

@@ -82,7 +82,7 @@ public class BTVN_5_240418 {
 				exerciseNumber = 0;
 			}
 		}
-		System.out.println("Bạn đã thoát khỏi chương trình!");
+		System.out.println("Bạn đã thoát kh�?i chương trình!");
 		// sc.close();
 
 	}
@@ -221,7 +221,7 @@ public class BTVN_5_240418 {
 				numberArrays = 0;
 			}
 
-			System.out.println("Chọn 0 để kết thúc bài 2. Enter để làm lại!");
+			System.out.println("Ch�?n 0 để kết thúc bài 2. Enter để làm lại!");
 			sc.nextLine(); // xóa phím Enter
 			run = sc.nextLine();
 			if (run.equals("0")) {
@@ -276,7 +276,7 @@ public class BTVN_5_240418 {
 
 	// BAI 3: Viết chương trình nhập mảng số nguyên từ bàn phím.
 	// Sắp xếp và xuất mảng vừa nhập ra màn hình.
-	// Xuất phần tử có giá trị nhỏ nhất ra màn hình
+	// Xuất phần tử có giá trị nh�? nhất ra màn hình
 	// Tính và xuất ra màn hình trung bình cộng các phần tử chia hết cho 3
 
 	public static void Bai_3() {
@@ -317,7 +317,7 @@ public class BTVN_5_240418 {
 				numberArrays = 0;
 			}
 
-			System.out.println("Chọn 0 để kết thúc bài 3. Enter để làm lại!");
+			System.out.println("Ch�?n 0 để kết thúc bài 3. Enter để làm lại!");
 			sc.nextLine(); // xoa phim Enter
 			run = sc.nextLine();
 			if (run.equals("0")) {
@@ -355,9 +355,9 @@ public class BTVN_5_240418 {
 					System.out.print(intArray[i] + " ");
 				}
 
-				// Xuất phần tử có giá trị nhỏ nhất ra màn hình
+				// Xuất phần tử có giá trị nh�? nhất ra màn hình
 				System.out.println();
-				System.out.println("Phần tử nhỏ nhất: " + intArray[0]);
+				System.out.println("Phần tử nh�? nhất: " + intArray[0]);
 
 				// Tính và xuất ra màn hình trung bình cộng các phần tử chia hết cho 3
 				double temp = 0;
@@ -376,11 +376,11 @@ public class BTVN_5_240418 {
 	}
 
 	// BAI 4:
-	// Xuất 2 mảng đã nhập, mỗi sinh viên có thêm học lực
+	// Xuất 2 mảng đã nhập, mỗi sinh viên có thêm h�?c lực
 	// o Yếu: điểm < 5
 	// o Trung bình: 5 <= điểm < 6.5
 	// o Khá: 6.5 <= điểm < 7.5
-	// o Giỏi: 7.5<= điểm < 9
+	// o Gi�?i: 7.5<= điểm < 9
 	// o Xuất sắc: điểm >= 9
 	// Sắp xếp danh sách sinh viên đã nhập tăng dần theo điểm
 
@@ -421,7 +421,7 @@ public class BTVN_5_240418 {
 				numberStudent = 0;
 			}
 
-			System.out.println("Chọn 0 để kết thúc bài 4. Chọn Enter để làm lại");
+			System.out.println("Ch�?n 0 để kết thúc bài 4. Ch�?n Enter để làm lại");
 			sc.nextLine(); // xóa phím Enter
 			run = sc.nextLine();
 			if (run.equals("0")) {
@@ -472,7 +472,7 @@ public class BTVN_5_240418 {
 								studentLevel[i] = "Khá";
 							} else {
 								if (7.5 <= studentMark[i] && studentMark[i] < 9) {
-									studentLevel[i] = "Giỏi";
+									studentLevel[i] = "Gi�?i";
 								} else {
 									studentLevel[i] = "Xuất sắc";
 								}
@@ -565,7 +565,7 @@ public class BTVN_5_240418 {
 				number = 0;
 			}
 
-			System.out.println("Chọn 0 để thoát bài 5. Enter để làm lại!");
+			System.out.println("Ch�?n 0 để thoát bài 5. Enter để làm lại!");
 			sc.nextLine();
 			run = sc.nextLine();
 			if (run.equals("0")) {
@@ -663,11 +663,11 @@ public class BTVN_5_240418 {
 
 	// ------------------------------------------------------------------//
 	/*
-	 * Bài 6. Viết chương trình nhập vào một mảng số nguyên có n phần tử
+	 * Bài 6. Viết chương trình nhập vào một mảng sô�? nguyên có n phần tử
 	 * 
-	 * a) Xuất giá trị các phần tử của mảng. b) Tìm phần tử có giá trị lớn nhất,
-	 * nhỏ nhất. c) Đếm số phần tử là số chẵn d) Tìm các phần tử là số
-	 * nguyên tố. e) Sắp xếp mảng tăng dần f) Tìm phần tử có giá trị x
+	 * a) Xuất giá trị các phần tử của mảng. b) Tìm phần tử có giá trị lơ�?n nhất,
+	 * nh�? nhất. c) �?ếm sô�? phần tử là sô�? chẵn d) Tìm các phần tử là sô�?
+	 * nguyên tô�?. e) Sắp xếp mảng tăng dần f) Tìm phần tử có giá trị x
 	 */
 	public static void Bai_6() {
 		Scanner sc = new Scanner(System.in);
@@ -709,7 +709,7 @@ public class BTVN_5_240418 {
 				numOfArr = 0;
 			}
 
-			System.out.println("Chọn 0 để thoát bài 6. Enter để làm lại!");
+			System.out.println("Ch�?n 0 để thoát bài 6. Enter để làm lại!");
 			sc.nextLine();
 			run = sc.nextLine();
 			if (run.equals("0")) {

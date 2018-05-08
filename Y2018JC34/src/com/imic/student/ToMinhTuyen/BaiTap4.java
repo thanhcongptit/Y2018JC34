@@ -8,7 +8,7 @@ public class BaiTap4 {
 
 		int thang = 0;
 		int nam = 0;
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		try {
@@ -26,10 +26,10 @@ public class BaiTap4 {
 			System.out.println("ban da nhap sai  moi ban nhap lai");
 
 		}
-		
+
 		System.out.println();
 
-		int kiemtranam = nam % 4;
+		int kiemtranam = nam % 400;
 		switch (thang) {
 		case 1:
 			System.out.printf("Thang %d Nam %d co 31 ngay", thang, nam);
@@ -66,16 +66,14 @@ public class BaiTap4 {
 			break;
 
 		default:
-			if(kiemtranam == 0){
+			if (kiemtranam == 0) {
 				System.out.printf("Thang %d Nam %d co 29 ngay", thang, nam);
-				
-			}
-			else {
+
+			} else {
 				System.out.printf("Thang %d Nam %d co 28 ngay", thang, nam);
 			}
 			break;
 		}
-		
-		
+
 	}
 }
