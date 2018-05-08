@@ -3,6 +3,10 @@ package com.imic.students.TruongQuangQuan.BaitapBuoi4;
 import java.util.Scanner;
 
 public class bài4 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/thanhcongptit/Y2018JC34
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);

@@ -18,7 +18,7 @@ public class Lab3Bai4 {
 	//Comment tu Le Thanh Cong
 	/*
 	Do bạn cần để nextLine() tại sau lúc nhập số chứ không phải lúc nhập String xong
-	Nếu để như bạn làm lúc đầu: thì nó sẽ bỏ qua việc gán này : name[i] = scanner.nextLine();
+	Nếu để như bạn làm lúc đầu: thì nó sẽ b�? qua việc gán này : name[i] = scanner.nextLine();
 	và lúc bạn nhập thực chất là bạn đang nhập và không gán cho biên name[i] mà chỉ là chạy lệnh scanner.nextLine();
 	*/
 

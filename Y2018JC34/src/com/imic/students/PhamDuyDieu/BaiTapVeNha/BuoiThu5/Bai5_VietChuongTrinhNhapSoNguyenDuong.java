@@ -6,8 +6,7 @@ public class Bai5_VietChuongTrinhNhapSoNguyenDuong {
 	/*
 	 * 1.Viết chương trình nhập số nguyên dương n và thực hiện các chức năng sau: a)
 	 * Tính tổng các chữ số của n. b) Liệt kê các ước số của n. c) Liệt kê các ước
-	 * số là nguyên tố của n. ví dụ: số nguyên 12345 ban đầu 12345/ 10000 = 1 ~
-	 * a/10^4 sau đó 2345/1000 = 2 ~ ((a-a/(10^4*1)/10^3)
+	 * số là nguyên tố của n. 
 	 */
 	public static void main(String[] args) {
 		double a;
@@ -22,7 +21,7 @@ public class Bai5_VietChuongTrinhNhapSoNguyenDuong {
 		System.out.println(
 				"Vui lòng chọn: \n1) Tính tổng các chữ số của n \n2) Liệt kê các ước số của n \n3) Liệt kê các ước số là nguyên tố của n");
 		chon = sc.nextInt();
-		for (int j = 1; j < 1000000; j++) {
+		for (int j = 1; j <= a; j++) {
 			if (a % j == 0) {
 				uocso += j + "  ";
 				demUoc = 0;
