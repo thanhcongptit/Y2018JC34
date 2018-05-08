@@ -14,11 +14,10 @@ public class Dem_tu_6_040518 {
 
 		boolean kt = true;
 
-		String input = sc.nextLine();
+		String input = sc.nextLine(); // nhập chuỗi
 		String[] mangChuoi = input.split(" ");
 		String[] mangChuoi2 = new String[MAX];
 		String[] mangChuoi3 = new String[MAX];
-		// System.out.println(Arrays.toString(mangChuoi));
 
 		for (int i = 0; i < mangChuoi.length; i++) { // xoa dau cach
 			if (!mangChuoi[i].equals("")) {
