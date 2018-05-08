@@ -2,7 +2,7 @@ package com.imic.students.TruongQuangQuan.BaitapBuoi4;
 
 import java.util.Scanner;
 
-public class b√†i4 {
+public class b‡i4 {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);

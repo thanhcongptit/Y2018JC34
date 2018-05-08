@@ -1,4 +1,4 @@
-package com.imic.students.NguyenMinhQuan;
+package com.imic.students.NguyenMinhQuan_Buoi4;
 
 import java.util.Scanner;
 
