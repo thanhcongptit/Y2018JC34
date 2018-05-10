@@ -28,13 +28,13 @@ public class Employee implements Comparable<Employee> {
 	@Override
 	public int compareTo(Employee o) {
 		// TODO Auto-generated method stub
-		return o.name.compareTo(this.name);
+		return this.name.compareTo(o.name);
 	}
 
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return name + "   " + salary;
+		return name + " ---- " + salary;
 	}
 
 }

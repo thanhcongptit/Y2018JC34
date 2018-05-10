@@ -7,22 +7,22 @@ import java.util.Scanner;
 public class Run {
 	static Employee emp = new Employee();
 	static Scanner sc = new Scanner(System.in);
-	static int numberEmp = 0;
-	static Employee employee[] = new Employee[30];
+	static int numberEmp = sc.nextInt();
+	static Employee employee[] = new Employee[numberEmp];
 
 	public static void main(String[] args) {
+
 		Run run = new Run();
-		run.Input();
-		run.Output();
-		run.SortSaralyEmployee();
-		run.SortNameEmployee();
+		run.Input(numberEmp);
+		run.Output(numberEmp);
+		run.SortSaralyEmployee(numberEmp);
+		run.SortNameEmployee(numberEmp);
 	}
 
-	public static void Input() {
-		System.out.println("Nhap so nhan vien: ");
-		numberEmp = sc.nextInt();
+	public static void Input(int n) {
+
 		sc.nextLine();
-		for (int i = 0; i < numberEmp; i++) {
+		for (int i = 0; i < n; i++) {
 			employee[i] = new Employee();
 			String nameEmp = sc.nextLine();
 			employee[i].setName(nameEmp);
@@ -33,18 +33,21 @@ public class Run {
 		}
 	}
 
-	public static void Output() {
-		for (int i = 0; i < numberEmp; i++) {
-			System.out.println(employee[i].getName() + "----" + employee[i].getSaraly());
+	public static void Output(int n) {
+		System.out.println("--------------------------");
+		System.out.println("Danh sach NV va luong");
+		for (int i = 0; i < n; i++) {
+			System.out.println(employee[i].getName() + " ---- " + employee[i].getSaraly());
+
 		}
 	}
 
-	public static void SortSaralyEmployee() {
+	public static void SortSaralyEmployee(int n) {
 		Employee temp;
-		System.out.println("----------------------------------");
-		System.out.println("Sort theo luong");
-		for (int i = 0; i < numberEmp; i++)
-			for (int j = i + 1; j < numberEmp; j++) {
+		System.out.println("--------------------------");
+		System.out.println("Sort theo luong tang dan");
+		for (int i = 0; i < n; i++)
+			for (int j = i + 1; j < n; j++) {
 				if (employee[i].getSaraly() > employee[j].getSaraly()) {
 					temp = employee[i];
 					employee[i] = employee[j];
@@ -52,16 +55,17 @@ public class Run {
 
 				}
 			}
-		for (int i = 0; i < numberEmp; i++) {
+		for (int i = 0; i < n; i++) {
 			System.out.println(employee[i].getName() + " " + employee[i].getSaraly());
+			
 		}
 
 	}
 
-	public static void SortNameEmployee() {
+	public static void SortNameEmployee(int n) {
 
 		System.out.println("--------------------------");
-		System.out.println("Sort theo ten");
+		System.out.println("Sort ten NV theo abc");
 		Arrays.sort(employee); // null pointer exception
 		for (Employee emp : employee) {
 			System.out.println(emp.toString());
