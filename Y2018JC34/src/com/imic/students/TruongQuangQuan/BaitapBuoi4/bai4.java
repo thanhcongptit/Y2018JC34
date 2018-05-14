@@ -2,7 +2,7 @@ package com.imic.students.TruongQuangQuan.BaitapBuoi4;
 
 import java.util.Scanner;
 
-public class bài4 {
+public class bai4 {
 
 
 

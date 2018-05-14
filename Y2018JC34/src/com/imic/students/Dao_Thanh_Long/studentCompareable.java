@@ -3,7 +3,12 @@ package com.imic.students.Dao_Thanh_Long;
 public class studentCompareable implements Comparable<studentCompareable>{
 	private String name;
 	private int salary;
+	private final static String str = "final";	
 	
+	public static String getStr() {
+		return str;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -38,6 +43,7 @@ public class studentCompareable implements Comparable<studentCompareable>{
 	public int compareTo(studentCompareable o) {
 		return this.getSalary() - o.getSalary();
 	}
-	
+
+
 	
 }
