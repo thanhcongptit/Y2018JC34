@@ -3,7 +3,7 @@ package com.imic.students.TruongQuangQuan.BaitapBuoi4;
 import java.util.Scanner;
 import java.lang.NumberFormatException;
 
-public class bài5 {
+public class bai5 {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);

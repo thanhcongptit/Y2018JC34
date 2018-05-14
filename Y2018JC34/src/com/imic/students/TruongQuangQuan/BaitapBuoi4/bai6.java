@@ -3,7 +3,7 @@ package com.imic.students.TruongQuangQuan.BaitapBuoi4;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class b�i6 {
+public class bai6 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Hãy nhập số : ");
