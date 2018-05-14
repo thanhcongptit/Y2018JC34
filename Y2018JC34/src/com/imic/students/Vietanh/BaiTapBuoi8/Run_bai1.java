@@ -9,6 +9,6 @@ public class Run_bai1 {
 		sp.giamGia = 0;
 
 		sp.xuat();
-
+		
 	}
 }

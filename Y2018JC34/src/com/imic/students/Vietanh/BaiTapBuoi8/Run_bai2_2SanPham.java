@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Run_bai2_2SanPham {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+
 		SanPham2 sp[] = new SanPham2[2];
 		for (int i = 0; i < 2; i++) {
 			sp[i] = new SanPham2();
@@ -25,9 +26,10 @@ public class Run_bai2_2SanPham {
 			System.out.println("------------------");
 
 		}
-		
-		for(SanPham2 spham:sp) {
+
+		for (SanPham2 spham : sp) {
 			System.out.println(spham.toString());
 		}
+
 	}
 }

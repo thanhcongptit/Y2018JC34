@@ -10,10 +10,11 @@ public class SanPham1 {
 		return thue;
 	}
 
-	public void xuat() {
+	public  void xuat() {
 		System.out.println("Ten san pham: " + tensp);
 		System.out.println("donGia: " + donGia);
 		System.out.println("giam gia: " + giamGia+"%");
 		System.out.println("thue: " + thuethunhap());
 	}
+
 }

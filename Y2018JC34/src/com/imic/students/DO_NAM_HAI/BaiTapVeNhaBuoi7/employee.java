@@ -1,4 +1,4 @@
-package com.imic.students.DO_NAM_HAI;
+package com.imic.students.DO_NAM_HAI.BaiTapVeNhaBuoi7;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -36,10 +36,10 @@ public class employee implements Comparable<employee> {
 		for (int i = 0; i < 3; i++) {
 
 			employee[i] = new employee();
-			System.out.print(" Mời bạn nhập tên : ");
+			System.out.print(" Má»�i báº¡n nháº­p tÃªn : ");
 			this.name = nhap.nextLine();
 			employee[i].setName(this.name);
-			System.out.print("Mời bạn nhập lương : ");
+			System.out.print("Má»�i báº¡n nháº­p lÆ°Æ¡ng : ");
 			this.salary = nhap.nextDouble();
 			employee[i].setSalary(this.salary);
 			nhap.nextLine();
@@ -68,13 +68,13 @@ public class employee implements Comparable<employee> {
 
 	public void output() {
 		
-		System.out.println(" Sắp xếp lương theo bậc từ trên xuống ta được :");
+		System.out.println(" Sáº¯p xáº¿p lÆ°Æ¡ng theo báº­c tá»« trÃªn xuá»‘ng ta Ä‘Æ°á»£c :");
 		sapXepLuong();
 		for (int i = 0; i < 3; i++) {
 			System.out.println(employee[i].toString());
 
 		}
-			System.out.println(" Sắp xếp tên theo ABC ta được");
+			System.out.println(" Sáº¯p xáº¿p tÃªn theo ABC ta Ä‘Æ°á»£c");
 			sapXepTen();
 			for (int i = 0; i < 3; i++) {
 			System.out.println(employee[i].toString());
