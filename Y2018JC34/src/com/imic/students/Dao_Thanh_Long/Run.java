@@ -1,4 +1,5 @@
 package com.imic.students.Dao_Thanh_Long;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Run {
@@ -10,6 +11,9 @@ public class Run {
 		
 		String str="";
 		int salary;
+		
+		
+		
 		
 		System.out.println("Nhap ten ten va luong cua nhan vien");
 		for(int i=0;i<3;i++){
@@ -89,16 +93,20 @@ public class Run {
 		
 		System.out.println();
 		System.out.println("Sap xep theo thu tu luong tang dan ");
+		Arrays.sort(student2);
+		
+		
+		
 		studentCompareable temp1 = new studentCompareable();
-		for  ( int  i =  0 ; i <2 ; i ++) {
-	        for  ( int  j =  0 ; j <2  - i; j ++) {  
-	        	if(student2[j].compareTo(student2[j+1]) > 0){
-	        		temp1 = student2[j];
-	        		student2[j] = student2[j+1];
-	        		student2[j+1] = temp1;
-	        	}
-	        }
-	    }
+//		for (int i = 0; i < 2; i++) {
+//			for (int j = 0; j < 2 - i; j++) {
+//				if (student2[j].compareTo(student2[j + 1]) > 0) {
+//					temp1 = student2[j];
+//					student2[j] = student2[j + 1];
+//					student2[j + 1] = temp1;
+//				}
+//			}
+//		}
 		
 		for(int i=0;i<3;i++){
 			System.out.println(student2[i].toString());

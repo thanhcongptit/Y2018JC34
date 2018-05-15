@@ -55,8 +55,15 @@ public class bai5 {
 			System.out.println("Giá»›i tÃ­nh : ");
 			sex = scanner.nextLine();
 		}
+<<<<<<< HEAD
 
 		if (i >= 22 && (maritalStatus.equalsIgnoreCase("ChÆ°a cÃ³ gia Ä‘Ã¬nh") || maritalStatus.equalsIgnoreCase("Ly hÃ´n")))
+=======
+
+
+		if (i >= 22 && (maritalStatus.equalsIgnoreCase("ChÆ°a cÃ³ gia Ä‘Ã¬nh") || maritalStatus.equalsIgnoreCase("Ly hÃ´n")))
+
+>>>>>>> refs/remotes/origin/master
 		if (i >= 22
 				&& (maritalStatus.equalsIgnoreCase("ChÆ°a cÃ³ gia Ä‘Ã¬nh") || maritalStatus.equalsIgnoreCase("Ly hÃ´n"))
 
