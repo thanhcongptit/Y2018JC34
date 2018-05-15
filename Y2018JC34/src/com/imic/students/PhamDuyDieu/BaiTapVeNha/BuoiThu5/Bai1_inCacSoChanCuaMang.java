@@ -3,7 +3,7 @@ package com.imic.students.PhamDuyDieu.BaiTapVeNha.BuoiThu5;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
+
 
 public class Bai1_inCacSoChanCuaMang {
 	/*
@@ -16,16 +16,16 @@ public class Bai1_inCacSoChanCuaMang {
 		Scanner sc = new Scanner(System.in);
 		while(check) {
 			try {
-				System.out.println("Nhập số phần tử của mảng: ");
+				System.out.println("Nháº­p sá»‘ pháº§n tá»­ cá»§a máº£ng: ");
 				b = new Scanner(System.in).nextInt();
 				check = false;
 			}catch (Exception e) {
-				System.out.println("Bạn đã nhập sai kiểu dữ liệu. Vui lòng nhập lại..!");
+				System.out.println("Báº¡n Ä‘Ã£ nháº­p sai kiá»ƒu dá»¯ liá»‡u. Vui lÃ²ng nháº­p láº¡i..!");
 			}
 		}
 		
 		int a[] = new int[b];
-		System.out.println("Bạn vừa tạo mảng a[" + b + "].\nMỜI BẠN NHẬP GIÁ TRỊ CÁC PHẦN TỬ.");
+		System.out.println("Báº¡n vá»«a táº¡o máº£ng a[" + b + "].\nMá»œI Báº N NHáº¬P GIÃ� TRá»Š CÃ�C PHáº¦N Tá»¬.");
 		for (int i = 0; i < b; i++) {
 			System.out.print("a[" + i + "] = ");
 			a[i] = sc.nextInt();
@@ -33,7 +33,7 @@ public class Bai1_inCacSoChanCuaMang {
 				chuoi = chuoi + a[i] + "  ";
 			}
 			if (i == b - 1) {
-				System.out.println("chuỗi số chẵn là: \n" + chuoi);
+				System.out.println("chuá»—i sá»‘ cháºµn lÃ : \n" + chuoi);
 			}
 		}
 	}

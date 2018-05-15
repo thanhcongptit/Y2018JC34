@@ -2,7 +2,7 @@ package com.imic.students.TruongQuangQuan.BaitapBuoi4;
 
 import java.util.Scanner;
 
-public class Bài234 {
+public class Bai234 {
 	public static void main(String[] args) {
 
 		while (true) {

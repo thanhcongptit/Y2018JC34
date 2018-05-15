@@ -3,7 +3,7 @@ package com.imic.student.TRAN_THANH_XUAN;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import com.sun.javafx.fxml.BeanAdapter;
+
 
 public class BTVN_5_240418 {
 

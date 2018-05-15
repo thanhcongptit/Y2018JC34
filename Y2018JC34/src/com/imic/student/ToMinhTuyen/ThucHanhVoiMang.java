@@ -2,7 +2,7 @@ package com.imic.student.ToMinhTuyen;
 
 import java.util.Scanner;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
+
 
 public class ThucHanhVoiMang {
 

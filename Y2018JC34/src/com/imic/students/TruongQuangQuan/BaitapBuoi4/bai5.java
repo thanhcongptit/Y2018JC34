@@ -3,7 +3,7 @@ package com.imic.students.TruongQuangQuan.BaitapBuoi4;
 import java.util.Scanner;
 import java.lang.NumberFormatException;
 
-public class bài5 {
+public class bai5 {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
@@ -56,12 +56,10 @@ public class bài5 {
 			sex = scanner.nextLine();
 		}
 
-<<<<<<< HEAD
-		if (i >= 22 && (maritalStatus.equalsIgnoreCase("ChÆ°a cÃ³ gia Ä‘Ã¬nh") || maritalStatus.equalsIgnoreCase("Ly hÃ´n"))
-=======
+		if (i >= 22 && (maritalStatus.equalsIgnoreCase("ChÆ°a cÃ³ gia Ä‘Ã¬nh") || maritalStatus.equalsIgnoreCase("Ly hÃ´n")))
 		if (i >= 22
 				&& (maritalStatus.equalsIgnoreCase("ChÆ°a cÃ³ gia Ä‘Ã¬nh") || maritalStatus.equalsIgnoreCase("Ly hÃ´n"))
->>>>>>> branch 'master' of https://github.com/thanhcongptit/Y2018JC34
+
 				&& sex.equalsIgnoreCase("Nam")) {
 			System.out.printf("ChÃ o má»«ng %s tham gia káº¿t báº¡n", name);
 		} else if (i >= 19

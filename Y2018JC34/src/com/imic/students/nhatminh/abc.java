@@ -2,7 +2,6 @@ package com.imic.students.nhatminh;
 
 import java.util.Scanner;
 
-import com.sun.org.apache.xalan.internal.xsltc.compiler.Template;
 
 public class abc {
 

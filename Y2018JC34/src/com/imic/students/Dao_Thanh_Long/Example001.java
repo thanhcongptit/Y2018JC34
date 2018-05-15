@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import com.oracle.webservices.internal.impl.internalspi.encoding.StreamDecoder;
 
 public class Example001 {
 
