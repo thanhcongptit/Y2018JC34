@@ -17,23 +17,17 @@ public class RunSanPham {
 		}
 
 		System.out.println("-----------Danh muc san pham------------");
-		for (int i = 0; i < sanphamArr.size(); i++) {
-			getSP(sanphamArr);
-		}
+		getSP(sanphamArr);
 
 		System.out.println("-----------Sort giam dan theo gia-----------");
 		Collections.sort(sanphamArr);
-		for (int i = 0; i < sanphamArr.size(); i++) {
-			getSP(sanphamArr);
-		}
+		getSP(sanphamArr);
 
 		System.out.println("-----------Tim va xoa ten san pham------------");
 		RemoveName(sc, sanphamArr);
 		System.out.println();
 		System.out.println("Sau khi xoa");
-		for (int i = 0; i < sanphamArr.size(); i++) {
-			getSP(sanphamArr);
-		}
+		getSP(sanphamArr);
 
 		System.out.println("------------Gia trung binh cua sp----------------");
 		System.out.println("Gia TB = " + GiaTrungBinh(sanphamArr));

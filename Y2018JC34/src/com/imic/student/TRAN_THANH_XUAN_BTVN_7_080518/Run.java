@@ -1,8 +1,9 @@
 package com.imic.student.TRAN_THANH_XUAN_BTVN_7_080518;
 
-import java.awt.im.InputContext;
 import java.util.Arrays;
 import java.util.Scanner;
+
+
 
 public class Run {
 	static Employee emp = new Employee();
@@ -11,12 +12,10 @@ public class Run {
 	static Employee employee[] = new Employee[numberEmp];
 
 	public static void main(String[] args) {
-
-		Run run = new Run();
-		run.Input(numberEmp);
-		run.Output(numberEmp);
-		run.SortSaralyEmployee(numberEmp);
-		run.SortNameEmployee(numberEmp);
+		Input(numberEmp);
+		Output(numberEmp);
+		SortSaralyEmployee(numberEmp);
+		SortNameEmployee(numberEmp);
 	}
 
 	public static void Input(int n) {
@@ -72,3 +71,4 @@ public class Run {
 		}
 	}
 }
+
