@@ -1,11 +1,11 @@
 package com.imic.students.Vietanh.BaiTapBuoi8;
 
-public class SanPham4 {
+public class SanPham4 implements Comparable<SanPham4> {
 	private String name;
 	private double giasp;
 	private double giamgia;
 	
-	
+	public SanPham4() {}
 	
 	public String getName() {
 		return name;
@@ -34,6 +34,16 @@ public class SanPham4 {
 	public double ThueNhapKhau() {
 		double thue = giasp * 10 / 100;
 		return thue;
+	}
+
+	@Override
+	public int compareTo(SanPham4 o) {
+	return (int) (o.getGiasp()-this.getGiasp());
+	}
+
+	@Override
+	public String toString() {
+		return "name:"+getName()+"--------gia san pham:"+getGiasp();
 	}
 
 	public SanPham4(String name, double giasp, double giamgia) {
