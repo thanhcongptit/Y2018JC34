@@ -10,12 +10,7 @@ public class Bt_them {
 		Scanner sc = new Scanner(System.in);
 		ArrayList<SinhVien> svList = new ArrayList<SinhVien>();
 		boolean check = true;
-		System.out.println("Xin moi nhap danh sach sinh vien, hien tai danh sach sinh vien dang trong");
-		System.out.println("----------");
-		AddSv(svList, sc);
-		System.out.println("Danh sach sinh vien hien tai");
-		Show(svList);
-		System.out.println("----------");
+
 		while (check) {
 			System.out.println("----------");
 			Chon(svList, sc);
@@ -106,7 +101,8 @@ public class Bt_them {
 
 	public static void Sortbyname(ArrayList<SinhVien> svList) {
 		Collections.sort(svList);
-		Show(svList);
+//		Show(svList);
+		System.out.println("Da sap xep xong");
 	}
 
 	public static void Sortbydiem(ArrayList<SinhVien> svList) {
@@ -117,7 +113,8 @@ public class Bt_them {
 				return (int) (o2.getDiemtrungbinh() - o1.getDiemtrungbinh());
 			}
 		});
-		Show(svList);
+//		Show(svList);
+		System.out.println("Da sap xep xong");
 	}
 
 	public static void Chon(ArrayList<SinhVien> svList, Scanner sc) {
@@ -135,7 +132,7 @@ public class Bt_them {
 		sc.nextLine();
 		switch (chon) {
 		case 0:
-			break;
+			System.exit(0);
 		case 1:
 			AddSv(svList, sc);
 			break;
