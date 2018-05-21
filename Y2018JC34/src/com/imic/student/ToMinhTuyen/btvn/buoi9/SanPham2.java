@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import com.imic.student.ToMinhTuyen.btvn.buoi7.Employee;
 
-public class SanPham2 {
+public class SanPham2 implements Comparable<SanPham2> {
 
 	private String tensanpham;
 	private double giasanpham;
@@ -26,15 +26,21 @@ public class SanPham2 {
 	public void setGiasanpham(double giasanpham) {
 		this.giasanpham = giasanpham;
 	}
-
-
-	Comparator<SanPham2> sp = new Comparator<SanPham2>() {
-
-		@Override
-		public int compare(SanPham2 o1, SanPham2 o2) {
-			// TODO Auto-generated method stub
-			return (int) o1.giasanpham - (int) o2.giasanpham;
-		}
-	};
 	
+	public void Xuat() {
+		System.out.println("SanPham: " + getTensanpham() + "-> Gia: "+ getGiasanpham());;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "SanPham: " + getTensanpham() + " Gia: "+ getGiasanpham();
+	}
+
+	public int compareTo(SanPham2 o) {
+		return (int) (o.getGiasanpham()-this.giasanpham);
+	}
+
+
+
 }
