@@ -30,23 +30,39 @@ public class BaiTapBoSung {
 				deleteStudent(scanner, a);
 				break;
 			case 4:
-				Collections.sort(a);
+				if (a.isEmpty()) {
+					System.out.println("Chưa có sinh viên nào được nhập");
+				} else {
+					Collections.sort(a);
+					System.out.println("Đã xắp sếp theo điểm TB thành công");
+				}
+				System.out.println("------------------------------------");
 				break;
 			case 5:
-				Collections.sort(a, new Comparator<Student>() {
+				if (a.isEmpty()) {
+					System.out.println("Chưa có sinh viên nào được nhập");
+				} else {
+					Collections.sort(a, new Comparator<Student>() {
 
-					@Override
-					public int compare(Student o1, Student o2) {
-						// TODO Auto-generated method stub
-						return o1.getName().compareTo(o2.getName());
-					}
-				});
+						@Override
+						public int compare(Student o1, Student o2) {
+							// TODO Auto-generated method stub
+							return o1.getName().compareTo(o2.getName());
+						}
+					});
+					System.out.println("Đã xắp sếp theo tên thành công");
+				}
+				System.out.println("------------------------------------");
 				break;
 			case 6:
-
-				for (int i = 0; i < a.size(); i++) {
-					System.out.println(a.get(i));
+				if (a.isEmpty()) {
+					System.out.println("Chưa có sinh viên nào được nhập");
+				} else {
+					for (int i = 0; i < a.size(); i++) {
+						System.out.println(a.get(i));
+					}
 				}
+				System.out.println("===========================================");
 				break;
 
 			default:
@@ -96,15 +112,15 @@ public class BaiTapBoSung {
 				break;
 			}
 		}
+		System.out.println("------------------------------");
 	}
 
 	public static void editStudent(Scanner scanner, ArrayList<Student> a) {
 
 		Student student = new Student();
 		int i = 0;
-		int n = 0;
 		int check = 0;
-		
+
 		if (a.isEmpty()) {
 			System.out.println("Chưa có sinh viên nào được nhập");
 		} else {
@@ -138,44 +154,38 @@ public class BaiTapBoSung {
 					int newID = scanner.nextInt();
 					scanner.nextLine();
 					chek = true;
-					System.out.println(student.getId());
 					for (i = 0; i < a.size(); i++) {
 						Student checkID = a.get(i);
-						System.out.println(checkID.getId());
-						n = i;
 						if (newID == checkID.getId()) {
-							System.out.printf("ID %d đã tồn tại mời bạn nhập lại \n", student.getId());
+							System.out.printf("ID %d đã tồn tại mời bạn nhập lại \n", newID);
 							chek = false;
 						}
 					}
 					student.setId(newID);
 				} while (!chek);
-				a.set(n, student);
 				break;
 			case 2:
 				System.out.print("Mời bạn nhập tên mới: ");
 				student.setName(scanner.nextLine());
-				a.set(n, student);
 				break;
 			case 3:
 				System.out.print("Mời bạn nhập tuổi mới: ");
 				student.setAge(scanner.nextInt());
 				scanner.nextLine();
-				a.set(n, student);
 				break;
 			case 4:
 				System.out.print("Mời bạn nhập địa chỉ mới: ");
 				student.setAddress(scanner.nextLine());
-				a.set(n, student);
 				break;
 			default:
 				System.out.print("Mời bạn nhập điểm TB mới: ");
 				student.setGpa(scanner.nextDouble());
 				scanner.nextLine();
-				a.set(n, student);
 				break;
 			}
+			System.out.println("Đã sửa thông tin thành công");
 		}
+		System.out.println("------------------------------------");
 	}
 
 	public static void deleteStudent(Scanner scanner, ArrayList<Student> a) {
@@ -197,12 +207,16 @@ public class BaiTapBoSung {
 						check++;
 					}
 				}
+
 				if (check == 0) {
 					System.out.printf("Không có sinh viên có mã ID %d %n", checkID);
 					System.out.println("Hãy nhập lại");
 				}
 			}
 			a.remove(n);
+			System.out.println("Đã xóa thành công");
 		}
+
+		System.out.println("------------------------------------");
 	}
 }
