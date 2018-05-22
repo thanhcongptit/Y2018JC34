@@ -27,30 +27,22 @@ public class Bt_them {
 
 	public static void AddSv(ArrayList<SinhVien> svList, Scanner sc) {
 
-		boolean check = true;
-		while (check) {
-			SinhVien sv = new SinhVien();
-			System.out.println("Xin moi nhap name");
-			sv.setName(sc.nextLine());
-			System.out.println("Xin moi nhap ma sinh vien");
-			sv.setId(sc.nextInt());
-			System.out.println("Xin moi nhap tuoi sinh vien");
-			sv.setAge(sc.nextInt());
-			sc.nextLine();
-			System.out.println("Xin moi nhap dia chi sinh vien");
-			sv.setAd(sc.nextLine());
-			System.out.println("Xin moi nhap diem trung binh sinh vien");
-			sv.setDiemtrungbinh(sc.nextDouble());
-			sc.nextLine();
+		SinhVien sv = new SinhVien();
+		System.out.println("Xin moi nhap name");
+		sv.setName(sc.nextLine());
+		System.out.println("Xin moi nhap ma sinh vien");
+		sv.setId(sc.nextInt());
+		System.out.println("Xin moi nhap tuoi sinh vien");
+		sv.setAge(sc.nextInt());
+		sc.nextLine();
+		System.out.println("Xin moi nhap dia chi sinh vien");
+		sv.setAd(sc.nextLine());
+		System.out.println("Xin moi nhap diem trung binh sinh vien");
+		sv.setDiemtrungbinh(sc.nextDouble());
+		sc.nextLine();
 
-			svList.add(sv);
+		svList.add(sv);
 
-			System.out.println("Ban co muon nhap them sinh vien:");
-			System.out.println("Y or N");
-			if (sc.nextLine().equalsIgnoreCase("N")) {
-				check = false;
-			}
-		}
 	}
 
 	public static void Show(ArrayList<SinhVien> svList) {
@@ -101,7 +93,7 @@ public class Bt_them {
 
 	public static void Sortbyname(ArrayList<SinhVien> svList) {
 		Collections.sort(svList);
-//		Show(svList);
+		// Show(svList);
 		System.out.println("Da sap xep xong");
 	}
 
@@ -113,7 +105,7 @@ public class Bt_them {
 				return (int) (o2.getDiemtrungbinh() - o1.getDiemtrungbinh());
 			}
 		});
-//		Show(svList);
+		// Show(svList);
 		System.out.println("Da sap xep xong");
 	}
 
@@ -151,6 +143,8 @@ public class Bt_them {
 		case 6:
 			Show(svList);
 			break;
+		default:
+			System.out.println("Ban chon sai, vui long chon lai");
 
 		}
 	}
