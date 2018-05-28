@@ -21,6 +21,7 @@ public class NhanVien {
 		this.luong = luong;
 	}
 	
+	
 	public int getTN(){
 		return this.luong;
 	}

@@ -22,7 +22,6 @@ public class _20180525_btvn {
 		lc.soGio = 20*8;
 		lc.input("lc", 500);
 		
-		
 		System.out.println("Ho ten : " +nv.hoTen +" luong = "+nv.getTN());
 		System.out.println("Ho ten : " +tP.hoTen +" luong = "+tP.getTN());
 		System.out.println("Ho ten : " +lc.hoTen +" luong = "+lc.getTN());
