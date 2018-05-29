@@ -7,9 +7,9 @@ public class _20180525_Lab6 {
 
 	public static void main(String[] args) {
 		Scanner objSc = new Scanner(System.in);
-		bai1_Lab6(objSc);
+//		bai1_Lab6(objSc);
 //		bai2_Lab6(objSc);
-		
+		bai3_Lab6(objSc);
 		
 		objSc.close();
 	}
@@ -84,10 +84,10 @@ public class _20180525_Lab6 {
 		for(int i=0;i<5;i++){
 			System.out.printf("Ho ten :");
 			hoTen = objSc.nextLine();
-			
+			String regex = "\\w+@\\w+\\.\\w+";
 			System.out.printf("Email : ");
 			email = objSc.nextLine();
-			while(email.matches("\\w+@\\w+\\.\\w")){
+			while(!email.matches(regex)){
 				System.out.println("Dinh dang email khong dung. Moi ban nhap lai");
 				System.out.printf("Email : ");
 				email = objSc.nextLine();
@@ -95,7 +95,7 @@ public class _20180525_Lab6 {
 			
 			System.out.printf("SDT : ");
 			sdt = objSc.nextLine();
-			while(email.matches("\\d{10,11}")){
+			while(!sdt.matches("\\d{10,11}")){
 				System.out.println("Dinh dang SDT khong dung. Moi ban nhap lai");
 				System.out.printf("SDT : ");
 				sdt = objSc.nextLine();
@@ -103,7 +103,7 @@ public class _20180525_Lab6 {
 			
 			System.out.printf("CMT : ");
 			cmt = objSc.nextLine();
-			while(email.matches("\\d{9}")){
+			while(!cmt.matches("\\d{9}")){
 				System.out.println("Dinh dang CMt khong dung. Moi ban nhap lai");
 				System.out.printf("CMT : ");
 				cmt = objSc.nextLine();
