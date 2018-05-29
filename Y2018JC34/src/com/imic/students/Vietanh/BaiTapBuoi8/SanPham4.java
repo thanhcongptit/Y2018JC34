@@ -4,7 +4,16 @@ public class SanPham4 implements Comparable<SanPham4> {
 	private String name;
 	private double giasp;
 	private double giamgia;
+	private String hang;
 	
+	public String getHang() {
+		return hang;
+	}
+
+	public void setHang(String hang) {
+		this.hang = hang;
+	}
+
 	public SanPham4() {}
 	
 	public String getName() {
@@ -43,7 +52,7 @@ public class SanPham4 implements Comparable<SanPham4> {
 
 	@Override
 	public String toString() {
-		return "name:"+getName()+"--------gia san pham:"+getGiasp();
+		return "name:"+getName()+"--------gia san pham:"+getGiasp()+"--------------Hang:"+getHang();
 	}
 
 	public SanPham4(String name, double giasp, double giamgia) {

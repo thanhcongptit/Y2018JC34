@@ -4,6 +4,33 @@ public class HocSinh {
 
 	private String tenHS;
 	private int tuoiHS;
+	private String email;
+	private String phoneNumber;
+	private String CMND;
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public String getCMND() {
+		return CMND;
+	}
+
+	public void setCMND(String cMND) {
+		CMND = cMND;
+	}
 
 	public HocSinh() {
 	}
@@ -32,7 +59,7 @@ public class HocSinh {
 
 	@Override
 	public String toString() {
-		return "name"+tenHS+"------------tuoi:"+tuoiHS;
+		return "name:"+tenHS+"----email:"+email+"----So dien thoai:"+phoneNumber+"----CMND:"+CMND;
 	}
 
 }

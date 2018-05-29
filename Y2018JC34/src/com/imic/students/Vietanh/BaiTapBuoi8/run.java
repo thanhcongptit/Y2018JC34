@@ -8,7 +8,7 @@ public class run {
         HocSinh[] hs = new HocSinh[2];
         
         for(int i=0;i<2;i++) {
-        	hs[i] = new HocSinh();
+//        	hs[i] = new HocSinh();
         	System.out.println("Xin moi nhap name");
         	String name = sc.nextLine();
         	hs[i].setTenHS(name);
