@@ -8,27 +8,21 @@ import com.imic.students.Vietanh.BaiTapBuoi8.SanPham4;
 
 public class btvn_file1 {
 	public static void main(String[] args) {
-//		Scanner sc = new Scanner(System.in);
-//		ArrayList<SanPham4> spList = new ArrayList<SanPham4>();
-//		ArrayList<HocSinh> svList = new ArrayList<HocSinh>();
-//		boolean check = true;
-//		while(check) {
-//			Chon(sc, spList, svList);
-//			System.out.println("Ban co muon chon them bai tap");
-//			System.out.println("Y or N");
-//			String chon = sc.nextLine();
-//			if(chon.equalsIgnoreCase("N")) {
-//				check = false;
-//			}
-//		}
-		
-		String mau = "\\.";
-		String ten = ".";
-		if(ten.matches(mau)) {
-			System.out.println("ok");
-		}else {
-			System.out.println("not oke");
+		Scanner sc = new Scanner(System.in);
+		ArrayList<SanPham4> spList = new ArrayList<SanPham4>();
+		ArrayList<HocSinh> svList = new ArrayList<HocSinh>();
+		boolean check = true;
+		while(check) {
+			Chon(sc, spList, svList);
+			System.out.println("Ban co muon chon them bai tap");
+			System.out.println("Y or N");
+			String chon = sc.nextLine();
+			if(chon.equalsIgnoreCase("N")) {
+				check = false;
+			}
 		}
+		
+		
 
 	}
 
