@@ -5,7 +5,23 @@ public class NhanVien_bttrenlop {
 	public int luong;
 	
 	
-    public NhanVien_bttrenlop() {}
+    @Override
+	public String toString() {
+		return "name:"+name+"-----luong:"+luong;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getLuong() {
+		return luong;
+	}
+	public void setLuong(int luong) {
+		this.luong = luong;
+	}
+	public NhanVien_bttrenlop() {}
 	public NhanVien_bttrenlop(String name, int luong) {
 		super();
 		this.name = name;

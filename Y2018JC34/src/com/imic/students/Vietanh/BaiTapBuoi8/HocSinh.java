@@ -59,7 +59,7 @@ public class HocSinh {
 
 	@Override
 	public String toString() {
-		return "name:"+tenHS+"----email:"+email+"----So dien thoai:"+phoneNumber+"----CMND:"+CMND;
+		return "name:"+tenHS+"----tuoi:"+tuoiHS;
 	}
 
 }
