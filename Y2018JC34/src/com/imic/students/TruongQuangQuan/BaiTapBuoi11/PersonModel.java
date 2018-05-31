@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.imic.students.PhamDuyDieu.HocTrenLop.BuoiThu9.Array_List;
 
-public class personModel<T> {
+public class PersonModel<T> {
 
 	public ArrayList<T> li = new ArrayList<T>();
 
@@ -21,19 +21,19 @@ public class personModel<T> {
 
 	public static void main(String args[]) {
 
-		personModel<Student> st = new personModel<Student>();
+		PersonModel<Student> st = new PersonModel<Student>();
 
 		st.addObject(new Student("1", "Perter", 30));
 		st.addObject(new Student("2", "Tom", 29));
 		st.display();
 
-		personModel<Employee> emp = new personModel<Employee>();
+		PersonModel<Employee> emp = new PersonModel<Employee>();
 
 		emp.addObject(new Employee("3", "John", 8000));
 		emp.addObject(new Employee("4", "Maria", 9000));
 		emp.display();
 
-		personModel<String> s = new personModel<String>();
+		PersonModel<String> s = new PersonModel<String>();
 		s.addObject("Nguyễn Văn A");
 		s.addObject("Nguyễn Văn B");
 		s.display();
