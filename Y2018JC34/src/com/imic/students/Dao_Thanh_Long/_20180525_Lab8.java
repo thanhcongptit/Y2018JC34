@@ -7,7 +7,9 @@ public class _20180525_Lab8 {
 	public static void main(String[] args) {
 		Scanner objSc = new Scanner(System.in);
 		
-		
+		System.out.println("sum = " + sum(1,2,3,4,5,6,7,8,9,10));
+		System.out.println("Max = "+findMax(1,2,3,4,5,6,7,8,9,10));
+		System.out.println("Max = "+findMin(1,2,3,4,5,6,7,8,9,10));
 		bai3_Lab8(objSc);
 		
 		objSc.close();
@@ -36,7 +38,7 @@ public class _20180525_Lab8 {
 		double min;
 		min = x[0];
 		for(double i:x){
-			if(min < i){
+			if(min > i){
 				min = i;
 			}
 		}
@@ -57,6 +59,7 @@ public class _20180525_Lab8 {
 			char upperFirstChar = String.valueOf(firstChar).toUpperCase().charAt(0);
 			s1 = upperFirstChar + s1.substring(1);
 			temp3 = temp3+s1+" ";
+//			temp3 = String.join(" ", temp3,s1);
 		}	
 		System.out.println("Ho ten : "+temp3);
 	}

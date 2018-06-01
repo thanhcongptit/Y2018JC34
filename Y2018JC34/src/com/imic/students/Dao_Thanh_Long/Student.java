@@ -17,5 +17,16 @@ public class Student {
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
-
+	public Student(){
+		
+	}
+	
+	public Student(String name,int salary){
+		this.name = name;
+		this.salary = salary;
+	}
+	
+	public String toString(){
+		return "Ho ten :"+this.name+", luong : "+this.salary;
+	}
 }
