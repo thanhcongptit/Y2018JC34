@@ -27,6 +27,5 @@ package com.imic.students.PhamDuyDieu.BaiTapVeNha.BuoiThu11;
 
 public interface personExample {
 	public void input();
-
 	public void display();
 }
