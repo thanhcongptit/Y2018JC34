@@ -9,7 +9,7 @@ public class sinhVien {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return " ID: "+id+"\n Họ và tên: "+ name+ "\n Tuổi: "+ age+ "\n Địa chỉ: "+address+ "\n Điểm trung bình: "+gpa;
+		return " ID: "+id+"\t Họ và tên: "+ name+ "\t Tuổi: "+ age+ "\t Địa chỉ: "+address+ "\t Điểm trung bình: "+gpa;
 	}
 	public int getId() {
 		return id;
