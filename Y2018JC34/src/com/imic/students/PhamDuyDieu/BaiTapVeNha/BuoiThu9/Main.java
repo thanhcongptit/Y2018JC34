@@ -1,20 +1,44 @@
 package com.imic.students.PhamDuyDieu.BaiTapVeNha.BuoiThu9;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		menu();
-		Scanner sc = new Scanner(System.in);
+		int luaChon;
 		ArrayList<sinhVien> is = new ArrayList<sinhVien>();
-		addSTD(is, sc);
-		showSTD(is, sc);
-		editSTD(is, sc);
-		showSTD(is, sc);
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+		menu();
+		luaChon = sc.nextInt();
+		switch (luaChon) {
+		case 1:
+			addSTD(is, sc);
+			break;
+		case 2:
+			editSTD(is, sc);
+			break;
+		case 3:
+			deleteSTD(is, sc);
+			break;
+		case 4:
+			sortGPA(is, sc);
+			break;
+		case 5:
+			sortName(is, sc);
+			break;
+		case 6:
+			showSTD(is, sc);
+			break;
+		case 0:
+			System.out.println("TẠM BIỆT..!");
+			System.exit(0);
+			break;
+		}
 		
-
+		}
 	}
 	public static void menu() {
 		System.out.println("CHỌN CHỨC NĂNG");
@@ -84,7 +108,27 @@ public class Main {
 			}
 		}
 	}
+	public static void sortGPA(ArrayList<sinhVien> is, Scanner sc) {
+		sinhVien temp = new sinhVien();
+		for(int i=0; i<is.size(); i++) {
+			for(int j =0; j<is.size(); j++) {
+				if(is.get(i).getGpa()<is.get(j).getGpa()) {
+					temp = is.get(i);
+					is.set(i, is.get(j));
+					is.set(j, temp);
+				}
+			}
+		}
+		System.out.println("=== SẮP XẾP THEO ĐIỂM GPA ===");
+		showSTD(is, sc);
+	}
+	public static void sortName(ArrayList<sinhVien> is, Scanner sc) {
+		Collections.sort(is);
+		System.out.println("=== SẮP XẾP THEO TÊN ===");
+		showSTD(is, sc);
+	}
 	public static void showSTD(ArrayList<sinhVien> is, Scanner sc) {
+		System.out.println("=== DANH SÁCH SINH VIÊN ===");
 		for(int i = 0; i<is.size(); i++) {
 			System.out.println(is.get(i).toString());
 		}

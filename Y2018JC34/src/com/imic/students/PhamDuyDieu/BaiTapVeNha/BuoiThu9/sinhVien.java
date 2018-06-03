@@ -1,6 +1,6 @@
 package com.imic.students.PhamDuyDieu.BaiTapVeNha.BuoiThu9;
 
-public class sinhVien {
+public class sinhVien implements Comparable<sinhVien>{
 	private int id;
 	private String name;
 	private int age;
@@ -40,5 +40,10 @@ public class sinhVien {
 	}
 	public void setGpa(int gpa) {
 		this.gpa = gpa;
+	}
+	@Override
+	public int compareTo(sinhVien o) {
+		// TODO Auto-generated method stub
+		return o.name.compareTo(this.name);
 	}
 }
