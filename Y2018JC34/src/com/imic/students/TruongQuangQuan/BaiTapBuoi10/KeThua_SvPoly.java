@@ -43,5 +43,13 @@ public abstract class KeThua_SvPoly {
 		System.out.println("Ngành : " + this.nganh);
 		System.out.println("Điểm : " + getDiem());
 		System.out.println("Học lực : " + getHocLuc());
+		System.out.println("-------------------------");
 	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Tên SV : " + this.hoTen + "Ngành : " + this.nganh + "Học lực : " + getHocLuc();
+	}
+
 }

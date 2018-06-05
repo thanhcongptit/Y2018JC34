@@ -34,5 +34,4 @@ public class Student {
 		// TODO Auto-generated method stub
 		return "Tên sv : "+ this.name + "-----ID: "+ this.id + "-----Tuổi : " + this.age;
 	}
-	
 }
