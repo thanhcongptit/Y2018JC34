@@ -1,9 +1,10 @@
 package com.imic.students.Vietanh.BaiTapBuoi9;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class SinhVien implements Comparable<SinhVien>{
-	Scanner sc = new Scanner(System.in);
+public class SinhVien implements Comparable<SinhVien>, Serializable{
+	
 	private String name;
 	private int id;
 	private int age;
@@ -50,7 +51,19 @@ public class SinhVien implements Comparable<SinhVien>{
 		this.diemtrungbinh = diemtrungbinh;
 	}
 	
+	
+	public SinhVien() {
+	}
 
+
+	public SinhVien(String name, int id, int age, String ad, double diemtrungbinh) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.age = age;
+		this.ad = ad;
+		this.diemtrungbinh = diemtrungbinh;
+	}
 
 	@Override
 	public String toString() {
