@@ -1,8 +1,17 @@
 package com.imic.students.PhamDuyDieu.BaiTapVeNha.BuoiThu9;
 
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+
+import com.sun.istack.internal.logging.Logger;
 
 public class Main {
 
@@ -32,6 +41,9 @@ public class Main {
 			case 6:
 				showSTD(is, sc);
 				break;
+			case 7:
+				docfile();
+				break;
 			case 0:
 				System.out.println("TẠM BIỆT..!");
 				System.exit(0);
@@ -49,10 +61,11 @@ public class Main {
 		System.out.println("4. Sort student by gpa.");
 		System.out.println("5. Sort student by name.");
 		System.out.println("6. Show student.");
+		System.out.println("7. Đọc file sinhvien.dat");
 		System.out.println("0. Exit.");
 	}
 
-	public static void add1STD(ArrayList<sinhVien> is, Scanner sc) {
+	public static void add1STD(ArrayList<sinhVien> is, Scanner sc){
 		sinhVien sv = new sinhVien();
 		boolean lap = true;
 		while (lap) {
@@ -97,10 +110,22 @@ public class Main {
 		System.out.println("GPA: ");
 		int gpa = sc.nextInt();
 		sv.setGpa(gpa);
-
 		is.add(sv);
+		ObjectOutputStream oos = null;
+		try {
+			oos = new ObjectOutputStream(new FileOutputStream("sinhvien.dat"));
+			oos.writeObject(sv);
+		} catch (Exception e) {
+			System.out.println("Lỗi rồi..");
+		} finally {
+			try {
+				oos.close();
+			} catch (Exception e2) {
+				System.out.println("Lại Lỗi");
+			}
+		}
+		
 	}
-
 	public static void addSTD(ArrayList<sinhVien> is, Scanner sc) {
 		int soLuong = 0;
 		System.out.println("Nhập số lượng sinh viên muốn thêm: ");
@@ -150,6 +175,7 @@ public class Main {
 		}
 		System.out.println("=== SẮP XẾP THEO ĐIỂM GPA ===");
 		showSTD(is, sc);
+
 	}
 
 	public static void sortName(ArrayList<sinhVien> is, Scanner sc) {
@@ -159,9 +185,29 @@ public class Main {
 	}
 
 	public static void showSTD(ArrayList<sinhVien> is, Scanner sc) {
-		System.out.println("=== DANH SÁCH SINH VIÊN ===");
-		for (int i = 0; i < is.size(); i++) {
-			System.out.println(is.get(i).toString());
+		
+		
+	System.out.println("=== DANH SÁCH SINH VIÊN ===");
+	for (int i = 0; i < is.size(); i++) {
+		System.out.println(is.get(i).toString());
 		}
 	}
+	public static void docfile() {
+		ObjectInputStream ois = null;
+		try {
+			ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream("sinhvien.dat")));
+			Object obj = ois.readObject();
+			sinhVien sv = (sinhVien) obj;
+			System.out.println(sv);
+		} catch (Exception e) {
+			System.out.println("đọc lỗi");
+		} finally {
+			try {
+				ois.close();
+			} catch (Exception e2) {
+				System.out.println("Đóng lỗi");
+			}
+		}
+	}
+
 }

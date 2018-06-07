@@ -1,6 +1,8 @@
 package com.imic.students.PhamDuyDieu.BaiTapVeNha.BuoiThu9;
 
-public class sinhVien implements Comparable<sinhVien>{
+import java.io.Serializable;
+
+public class sinhVien implements Comparable<sinhVien>, Serializable{
 	private int id;
 	private String name;
 	private int age;
@@ -9,7 +11,7 @@ public class sinhVien implements Comparable<sinhVien>{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return " ID: "+id+"\t Họ và tên: "+ name+ "\t Tuổi: "+ age+ "\t Địa chỉ: "+address+ "\t Điểm trung bình: "+gpa;
+		return " ID: "+id+"\t Ho Va Ten: "+ name+ "\t Tuoi: "+ age+ "\t Dia Chi: "+address+ "\t Diem Trung Binh: "+gpa;
 	}
 	public int getId() {
 		return id;
