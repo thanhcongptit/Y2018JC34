@@ -1,23 +1,52 @@
 package com.imic.students.TruongQuangQuan.BaiTapBuoi9;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class BaiTapBoSung {
+public class QuanLySinhVien {
 
 	public static void main(String[] args) {
 
-		Scanner scanner = new Scanner(System.in);
 		ArrayList<Student> a = new ArrayList<Student>();
+		Scanner scanner = new Scanner(System.in);
 		int menu = 0;
+
+		ObjectInputStream ois = null;
+		File file = new File("Sinhvien.dat");
+		if (file.exists()) {
+			try {
+				ois = new ObjectInputStream(new FileInputStream("Sinhvien.dat"));
+				a = (ArrayList<Student>) ois.readObject();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			} finally {
+				try {
+					ois.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+
 		while (true) {
 			System.out.println("Chọn 1 trong các chức năng");
 			System.out.println("1. Add student.\r\n" + "2. Edit student by id.\r\n" + "3. Delete student by id.\r\n"
 					+ "4. Sort student by gpa.\r\n" + "5. Sort student by name.\r\n" + "6. Show student.\r\n"
-					+ "0. Exit.");
+					+ "0. Exit.\r\n" + "7. Save");
 			menu = scanner.nextInt();
+			scanner.nextLine();
 
 			switch (menu) {
 			case 1:
@@ -64,7 +93,26 @@ public class BaiTapBoSung {
 				}
 				System.out.println("===========================================");
 				break;
-
+			case 7:
+				ObjectOutputStream oos = null;
+				try {
+					oos = new ObjectOutputStream(new FileOutputStream("Sinhvien.dat"));
+					oos.writeObject(a);
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} finally {
+					try {
+						oos.close();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				break;
 			default:
 				break;
 			}
@@ -75,6 +123,7 @@ public class BaiTapBoSung {
 	}
 
 	public static void addStudent(Scanner scanner, ArrayList<Student> a) {
+
 		while (true) {
 			Student student = new Student();
 			boolean check = true;
@@ -105,6 +154,25 @@ public class BaiTapBoSung {
 			student.setGpa(scanner.nextDouble());
 			scanner.nextLine();
 			a.add(student);
+
+			ObjectOutputStream oos = null;
+			try {
+				oos = new ObjectOutputStream(new FileOutputStream("Sinhvien.dat"));
+				oos.writeObject(a);
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} finally {
+				try {
+					oos.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 
 			System.out.println("Bạn có muốn nhập tiếp  \n" + "Y or N");
 			String nhapTiep = scanner.nextLine();
