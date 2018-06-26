@@ -3,6 +3,7 @@ package com.imic.jtable;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -74,11 +75,41 @@ public class CustomerDao {
 			
 		} catch (Exception e) {
 			System.out.println(e);
+		} finally {
+			close(connection, ps, rs);
 		}
 
 		return customers;
 	}
 
+	private void close(Connection connection, PreparedStatement ps, ResultSet rs) {
+		if(rs != null) {
+			try {
+				rs.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		if(ps != null) {
+			try {
+				ps.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		if(connection != null) {
+			try {
+				connection.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
 	public int update_data(Customer customer) {
 		DB_Connection obj_DB_Connection = new DB_Connection();
 		Connection connection = obj_DB_Connection.get_connection();
