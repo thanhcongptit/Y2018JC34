@@ -80,7 +80,7 @@ public class ThongTinKhachHang extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				Quan_Ly_Ban_Hang qlbh = new Quan_Ly_Ban_Hang();
 				qlbh.setVisible(true);
-//				this.dispose;
+				contentPane.setVisible(false);
 			
 				
 			}
